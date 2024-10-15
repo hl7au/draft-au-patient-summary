@@ -13,17 +13,14 @@
       </li>
     </ul>
   </li> -->
-    <li>
-    <a href="guidance.html">Guidance</a>
-  </li>
-  <!-- <li class="dropdown">
+  <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
       <b class="caret"></b>
     </a>
      <ul class="dropdown-menu">
-      <li>
+      <!-- <li>
         <a href="general-guidance.html">General Guidance</a>
-      </li>
+      </li>-->
        <li>
         <a href="relationship.html">Relationship with other IGs</a>
       </li>
@@ -31,28 +28,28 @@
         <a href="variance.html">AU Variance Statement</a>
       </li>
       <li>
-        <a href="comparison.html">Comparison with other national and international IGs</a>
-      </li>
-      <li>
-        <a href="future.html">Future of AUPS</a>
+        <a href="future.html">Future of AU Patient Summary</a>
       </li> 
     </ul>
-  </li>-->
-  <li class="dropdown">
+  </li>
+<li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artefacts
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
+       <li>
+        <a href="artifacts.html">Artefacts Summary</a>
+      </li>
       <li>
         <a href="profiles-and-extensions.html">Profiles and Extensions</a>
       </li>
       <!-- <li>
         <a href="search-parameters.html">Search Parameters</a>
-      </li> -->
+      </li>-->
       <li>
         <a href="terminology.html">Terminology</a>
       </li>
-      <!--  <li>
+      <!-- <li>
         <a href="capability-statements.html">Capability Statements</a>
       </li> -->
       <!-- <li>

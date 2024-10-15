@@ -8,8 +8,12 @@ The following profiles and have been defined for this implementation guide.
 {% include sd-list-generator.md %}
 <!-- ================================================ -->
 
+TBD
 
 ### Extensions
 
-All extensions used in this guide are defined in the base FHIR specification or [AU Base](http://build.fhir.org/ig/hl7au/au-fhir-base/profiles-and-extensions.html#extensions).
+All extensions used in this guide are defined in the FHIR Extensions Pack or [AU Base](http://build.fhir.org/ig/hl7au/au-fhir-base/profiles-and-extensions.html#extensions).
 
+The following extension are marked with Must Support in this implementation guide:
+
+TBD
