@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-	<id value="hl7.fhir.au.ps"/>
+	<id value="hl7.fhir.au.draft.ps"/>
 	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
 		<valueCode value="draft"/>
 	</extension>
 	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
 		<valueInteger value="0"/>
 	</extension>
-	<url value="http://hl7.org.au/fhir/aups/ImplementationGuide/hl7.fhir.au.ps"/>
+	<url value="http://hl7.org.au.draft/fhir/aups/ImplementationGuide/hl7.fhir.au.draft.ps"/>
 	<version value="0.1.0-cibuild"/>
 	<name value="AUPatientSummaryImplementationGuide"/>
 	<title value="AU Patient Summary Implementation Guide"/>
 	<status value="draft"/>
-	<experimental value="false"/>
+	<experimental value="true"/>
 	<publisher value="HL7 Australia"/>
 	<contact>
 		<name value="HL7 Australia FHIR Work Group"/>
@@ -112,7 +112,7 @@
 			</reference>
 			<name value="Bundle - Patient Summary"/>
 			<description value="Patient Summary"/>
-			<exampleCanonical value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-composition"/>
+			<exampleCanonical value="http://hl7.org.au/fhir.draft/aups/StructureDefinition/au-ps-composition"/>
 		</resource>
 		<resource>
 			<reference>
@@ -120,7 +120,7 @@
 			</reference>
 			<name value="Bundle - Patient Summary (with logical identifiers)"/>
 			<description value="Patient Summary"/>
-			<exampleCanonical value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-composition"/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-composition"/>
 		</resource>
 		<resource>
 			<reference>
@@ -128,7 +128,7 @@
 			</reference>
 			<name value="Bundle - Patient Summary (with logical identifiers)"/>
 			<description value="Patient Summary"/>
-			<exampleCanonical value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-composition"/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-composition"/>
 		</resource>
 		<!--Composition examples-->
 		<resource>
@@ -137,7 +137,7 @@
 			</reference>
 			<name value="IPS Composition example - minimal"/>
 			<description value="IPS Composition example - minimal"/>
-			<exampleCanonical value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-composition"/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-composition"/>
 		</resource>
 		<resource>
 			<reference>
@@ -145,16 +145,16 @@
 			</reference>
 			<name value="Composition - Patient Summary (Minimal IPS)"/>
 			<description value="Minimal Patient Summary (adapted from IPS).&#xa;&#xa;Patient: Mr. Li Wang"/>
-			<exampleCanonical value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-documentcomposition"/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/core/StructureDefinition/au-core-documentcomposition"/>
 		</resource>
-		<!--PATIENT EXAMPLES-->
+		<!--Patient examples -->
 		<resource>
 			<reference>
 				<reference value="Patient/ronny-irvine"/>
 			</reference>
 			<name value="Patient - Ronny Lawrence Irvine (missing data for birth date)"/>
 			<description value="AU Core example of a patient with missing data for birth date for the *AU Core Patient* profile."/>
-			<exampleCanonical value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-patient"/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-patient"/>
 		</resource>
 		<resource>
 			<reference>
@@ -162,7 +162,7 @@
 			</reference>
 			<name value="Patient - Mrs. Anne Bennelong"/>
 			<description value="AU Core example of a patient with a Medicare Number and communication preferences for the *AU Core Patient* profile."/>
-			<exampleCanonical value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-patient"/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-patient"/>
 		</resource>
 		<resource>
 			<reference>
@@ -170,7 +170,7 @@
 			</reference>
 			<name value="Patient - Mr. Li Wang"/>
 			<description value="AU Core example of a patient with an HPI-O scoped identifier and communications preferences for the *AU Core Patient* profile."/>
-			<exampleCanonical value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-patient"/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-patient"/>
 		</resource>
 		<resource>
 			<reference>
@@ -178,7 +178,7 @@
 			</reference>
 			<name value="Patient - Mia Leanne Banks"/>
 			<description value="AU Core example of patient who has an IHI, identifies as female, whose sex at birth is recorded as female, identifies as she/her/her/hers/herself, and has multiple contact details for the *AU Core Patient* profile."/>
-			<exampleCanonical value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-patient"/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-patient"/>
 		</resource>
 		<resource>
 			<reference>
@@ -186,16 +186,16 @@
 			</reference>
 			<name value="Patient - Deangelo HOWE"/>
 			<description value="AU Core example of a patient with IHI for the *AU Core Patient* profile."/>
-			<exampleCanonical value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-patient"/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-patient"/>
 		</resource>
-		<!--CONDITION EXAMPLES-->
+		<!--Condition examples -->
 		<resource>
 			<reference>
 				<reference value="Condition/ckd"/>
 			</reference>
 			<name value="Condition - Chronic Kidney Disease"/>
 			<description value="Adjusted from an active Chronic Kidney Disease example with onset age and subject.display for the *AU Core Condition* profile.Patient: Ronny Lawrence Irvine. Incompatible with IPS."/>
-			<exampleCanonical value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-condition"/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-condition"/>
 		</resource>
 		<!-- PAGES -->
 		<page>

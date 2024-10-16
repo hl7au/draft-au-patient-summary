@@ -7,7 +7,7 @@
     <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile">
         <valueCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"/>
     </extension>
-    <url value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-procedure"/>
+    <url value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-procedure"/>
     <version value="0.1.0"/>
     <name value="AUPSProcedure"/>
     <title value="AU Patient Summary Procedure"/>
@@ -24,26 +24,26 @@
             <path value="Procedure.subject"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-patient"/>
+                <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-patient"/>
             </type>
         </element>
         <element id="Procedure.performer.actor">
             <path value="Procedure.performer.actor"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-patient"/>
-                <targetProfile value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-relatedperson"/>
-                <targetProfile value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-device-observer"/>
-                <targetProfile value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-practitioner"/>
-                <targetProfile value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-practitionerrole"/>
-                <targetProfile value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-organization"/>
+                <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-patient"/>
+                <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-relatedperson"/>
+                <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-device-observer"/>
+                <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-practitioner"/>
+                <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-practitionerrole"/>
+                <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-organization"/>
             </type>
         </element>
         <element id="Procedure.performer.onBehalfOf">
             <path value="Procedure.performer.onBehalfOf"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-organization"/>
+                <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-organization"/>
             </type>
         </element>
     </differential>

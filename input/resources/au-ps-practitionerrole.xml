@@ -7,7 +7,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile">
     <valueCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/PractitionerRole-uv-ips"/>
   </extension>
-  <url value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-practitionerrole"/>
+  <url value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-practitionerrole"/>
   <version value="0.1.0"/>
   <name value="AUPSPractitionerRole"/>
   <title value="AU Patient Summary PractitionerRole"/>
@@ -25,14 +25,14 @@
       <path value="PractitionerRole.practitioner"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org.au/fhir/ips/StructureDefinition/Practitioner-au-ips"/>
+        <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-practitioner"/>
       </type>
     </element>
     <element id="PractitionerRole.organization">
       <path value="PractitionerRole.organization"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org.au/fhir/ips/StructureDefinition/Organization-au-ips"/>
+        <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-organization"/>
       </type>
     </element>
   </differential>

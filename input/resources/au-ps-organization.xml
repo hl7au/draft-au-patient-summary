@@ -7,7 +7,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile">
     <valueCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips"/>
   </extension>
-  <url value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-organization"/>
+  <url value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-organization"/>
   <version value="0.1.0"/>
   <name value="AUPSOrganization"/>
   <title value="AU Patient Summary Organization"/>

@@ -7,7 +7,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile">
     <valueCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationRequest-uv-ips"/>
   </extension>
-  <url value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-medicationrequest"/>
+  <url value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest"/>
   <version value="0.1.0"/>
   <name value="AUPSMedicationRequest"/>
   <title value="AU Patient Summary MedicationRequest"/>
@@ -24,25 +24,25 @@
       <path value="MedicationRequest.subject"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-patient"/>
+        <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-patient"/>
       </type>
     </element>
     <element id="MedicationRequest.requester">
       <path value="MedicationRequest.requester"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-practitioner"/>
-        <targetProfile value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-practitionerrole"/>
-        <targetProfile value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-organization"/>
-        <targetProfile value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-patient"/>
-        <targetProfile value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-relatedperson"/>
+        <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-practitioner"/>
+        <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-practitionerrole"/>
+        <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-organization"/>
+        <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-patient"/>
+        <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-relatedperson"/>
       </type>
     </element>
     <element id="MedicationRequest.reasonReference">
       <path value="MedicationRequest.reasonReference"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-condition"/>
+        <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-condition"/>
       </type>
     </element>
   </differential>

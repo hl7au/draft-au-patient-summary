@@ -7,7 +7,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile">
     <valueCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"/>
   </extension>
-  <url value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-immunization"/>
+  <url value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-immunization"/>
   <version value="0.1.0"/>
   <name value="AUPSImmunization"/>
   <title value="AU Patient Summary Immunization"/>
@@ -24,7 +24,7 @@
       <path value="Immunization.patient"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-patient"/>
+        <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-patient"/>
       </type>
     </element>
   </differential>
