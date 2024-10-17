@@ -36,7 +36,7 @@
 	<dependsOn>
 		<uri value="http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips"/>
 		<packageId value="hl7.fhir.uv.ips"/>
-		<version value="1.1.0"/>
+		<version value="2.0.0-ballot"/>
 	</dependsOn>
 	<dependsOn>
 		<uri value="http://hl7.org.au/fhir/core/ImplementationGuide/hl7.fhir.au.core"/>
@@ -105,12 +105,45 @@
 			<exampleBoolean value="false"/>
 		</resource>
 		<!-- EXAMPLES -->
-		<!--Bundle examples-->
+		<!--ALLERGYINTOLERANCE EXAMPLES-->
+		<resource>
+			<reference>
+				<reference value="AllergyIntolerance/lactose-01"/>
+			</reference>
+			<name value="AllergyIntolerance - Lactose intolerance (AU Core compliant)"/>
+			<description value="Adjusted from AU Core Lactose intolerance example. Patient: Mia Leanne Banks."/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-allergyintolerance"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="AllergyIntolerance/lactose-02"/>
+			</reference>
+			<name value="AllergyIntolerance - Lactose intolerance (AU Core and IPS non-compliant)"/>
+			<description value="Adjusted from AU Core Lactose intolerance example. Patient: Mia Leanne Banks."/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-allergyintolerance"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="AllergyIntolerance/lactose-03"/>
+			</reference>
+			<name value="AllergyIntolerance - Lactose intolerance (AU Core and IPS compliant)"/>
+			<description value="Adjusted from AU Core Lactose intolerance example. Patient: Mia Leanne Banks."/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-allergyintolerance"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="AllergyIntolerance/penicillin"/>
+			</reference>
+			<name value="AllergyIntolerance - Penicillin allergy"/>
+			<description value="Shows an example of Penicillin allergy for the *AU Core AllergyIntolerance* profile. Patient: Deangelo HOWE."/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-allergyintolerance"/>
+		</resource>
+		<!--BUNDLE EXAMPLES-->
 		<resource>
 			<reference>
 				<reference value="Bundle/ps-01"/>
 			</reference>
-			<name value="Bundle - Patient Summary"/>
+			<name value="Bundle - Patient Summary (AU Core compliant)"/>
 			<description value="Patient Summary"/>
 			<exampleCanonical value="http://hl7.org.au/fhir.draft/aups/StructureDefinition/au-ps-composition"/>
 		</resource>
@@ -118,7 +151,7 @@
 			<reference>
 				<reference value="Bundle/ps-02"/>
 			</reference>
-			<name value="Bundle - Patient Summary (with logical identifiers)"/>
+			<name value="Bundle - Patient Summary (IPS compliant)"/>
 			<description value="Patient Summary"/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-composition"/>
 		</resource>
@@ -126,11 +159,11 @@
 			<reference>
 				<reference value="Bundle/ps-03"/>
 			</reference>
-			<name value="Bundle - Patient Summary (with logical identifiers)"/>
+			<name value="Bundle - Patient Summary (AU Core and IPS compliant)"/>
 			<description value="Patient Summary"/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-composition"/>
 		</resource>
-		<!--Composition examples-->
+		<!--COMPOSITION EXAMPLES-->
 		<resource>
 			<reference>
 				<reference value="Composition/ips-composition-minimal"/>
@@ -147,7 +180,139 @@
 			<description value="Minimal Patient Summary (adapted from IPS).&#xa;&#xa;Patient: Mr. Li Wang"/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/core/StructureDefinition/au-core-documentcomposition"/>
 		</resource>
-		<!--Patient examples -->
+		<!--CONDITION EXAMPLES -->
+		<resource>
+			<reference>
+				<reference value="Condition/ckd-01"/>
+			</reference>
+			<name value="Condition - Chronic Kidney Disease (AU Core compliant)"/>
+			<description value="Adjusted from an active Chronic Kidney Disease example with onset age and subject.display for the *AU Core Condition* profile.Patient: Ronny Lawrence Irvine. Incompatible with IPS."/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-condition"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Condition/ckd-02"/>
+			</reference>
+			<name value="Condition - Chronic Kidney Disease (IPS compliant)"/>
+			<description value="Adjusted from an active Chronic Kidney Disease example with onset age and subject.display for the *AU Core Condition* profile.Patient: Ronny Lawrence Irvine. Incompatible with IPS."/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-condition"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Condition/ckd-03"/>
+			</reference>
+			<name value="Condition - Chronic Kidney Disease (AU Core and IPS compliant)"/>
+			<description value="Adjusted from an active Chronic Kidney Disease example with onset age and subject.display for the *AU Core Condition* profile.Patient: Ronny Lawrence Irvine. Incompatible with IPS."/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-condition"/>
+		</resource>
+		<!--IMMUNIZATION EXAMPLES-->
+		<resource>
+			<reference>
+				<reference value="Immunization/covid-01"/>
+			</reference>
+			<name value="Immunization - COVID Dose 1 (AU Core compliant)"/>
+			<description value="Adjusted from AU Core administered COVID 19 vaccine example. Patient: Mrs. Anne Bennelong."/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-immunization"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Immunization/covid-02"/>
+			</reference>
+			<name value="Immunization - COVID Dose 1 (IPS compliant)"/>
+			<description value="Adjusted from AU Core administered COVID 19 vaccine example. Patient: Mrs. Anne Bennelong."/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-immunization"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Immunization/covid-03"/>
+			</reference>
+			<name value="Immunization - COVID Dose 1 (AU Core and IPS compliant)"/>
+			<description value="Adjusted from AU Core administered COVID 19 vaccine example. Patient: Mrs. Anne Bennelong."/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-immunization"/>
+		</resource>
+		<!--MEDICATION EXAMPLES-->
+		<resource>
+			<reference>
+				<reference value="Medication/simvastatin"/>
+			</reference>
+			<name value="Medication - Simvastatin 40 MG Disintegrating Oral Tablet"/>
+			<description value="Shows an example of Simvastatin 40 MG Disintegrating Oral Tablet for the *AU Core Medication* profile."/>
+			<exampleCanonical value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-medication"/>
+		</resource>
+		<!--MEDICATIONREQUEST EXAMPLES-->
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/paracetamol-codeine-01"/>
+			</reference>
+			<name value="MedicationRequest - prescription, paracetamol 500 mg + codeine phosphate hemihydrate 30 mg (missing data for status and requester) (AU Core compliant)"/>
+			<description value="Adjusted from AU Core example of an order for paracetamol 500 mg + codeine phosphate hemihydrate 30 mg tablet illustrating missing data for status and requester. Patient:  Mrs. Anne Bennelong."/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/paracetamol-codeine-02"/>
+			</reference>
+			<name value="MedicationRequest - prescription, paracetamol 500 mg + codeine phosphate hemihydrate 30 mg (missing data for status and requester) (IPS compliant)"/>
+			<description value="Adjusted from AU Core example of an order for paracetamol 500 mg + codeine phosphate hemihydrate 30 mg tablet illustrating missing data for status and requester. Patient:  Mrs. Anne Bennelong."/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/paracetamol-codeine-03"/>
+			</reference>
+			<name value="MedicationRequest - prescription, paracetamol 500 mg + codeine phosphate hemihydrate 30 mg (missing data for status and requester) (AU Core and IPS compliant)"/>
+			<description value="Adjusted from AU Core example of an order for paracetamol 500 mg + codeine phosphate hemihydrate 30 mg tablet illustrating missing data for status and requester. Patient:  Mrs. Anne Bennelong."/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/reaptan-01"/>
+			</reference>
+			<name value="MedicationRequest - active prescription, Reaptan (AU Core compliant)"/>
+			<description value="Adjusted from AU Core example Reaptan for pain management that demonstrates representing medication as a contained Medication resource. Patient: Mr. Li Wang."/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/reaptan-02"/>
+			</reference>
+			<name value="MedicationRequest - active prescription, Reaptan (IPS compliant)"/>
+			<description value="Adjusted from AU Core example Reaptan for pain management that demonstrates representing medication as a contained Medication resource. Patient: Mr. Li Wang."/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/reaptan-03"/>
+			</reference>
+			<name value="MedicationRequest - active prescription, Reaptan (AU Core and IPS compliant)"/>
+			<description value="Adjusted from AU Core example Reaptan for pain management that demonstrates representing medication as a contained Medication resource. Patient: Mr. Li Wang."/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/simvastatin-01"/>
+			</reference>
+			<name value="MedicationRequest - active prescription, Simvastatin (AU Core compliant)"/>
+			<description value="Adjusted from AU Core example of an order for Simvastatin for high cholesterol that demonstrates representing medication as a reference to Medication resource. Patient: Mr. Li Wang."/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/simvastatin-02"/>
+			</reference>
+			<name value="MedicationRequest - active prescription, Simvastatin (IPS compliant)"/>
+			<description value="Adjusted from AU Core example of an order for Simvastatin for high cholesterol that demonstrates representing medication as a reference to Medication resource. Patient: Mr. Li Wang."/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/simvastatin-03"/>
+			</reference>
+			<name value="MedicationRequest - active prescription, Simvastatin (AU Core and IPS compliant)"/>
+			<description value="Adjusted from AU Core example of an order for Simvastatin for high cholesterol that demonstrates representing medication as a reference to Medication resource. Patient: Mr. Li Wang."/>
+			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest"/>
+		</resource>
+		<!--PATIENT EXAMPLE -->
 		<resource>
 			<reference>
 				<reference value="Patient/ronny-irvine"/>
@@ -187,15 +352,6 @@
 			<name value="Patient - Deangelo HOWE"/>
 			<description value="AU Core example of a patient with IHI for the *AU Core Patient* profile."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-patient"/>
-		</resource>
-		<!--Condition examples -->
-		<resource>
-			<reference>
-				<reference value="Condition/ckd"/>
-			</reference>
-			<name value="Condition - Chronic Kidney Disease"/>
-			<description value="Adjusted from an active Chronic Kidney Disease example with onset age and subject.display for the *AU Core Condition* profile.Patient: Ronny Lawrence Irvine. Incompatible with IPS."/>
-			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-condition"/>
 		</resource>
 		<!-- PAGES -->
 		<page>

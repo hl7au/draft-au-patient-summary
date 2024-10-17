@@ -5,34 +5,29 @@
     </meta>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
-        <value value="urn:uuid:be067109-ec6a-4c92-b831-5c8b7c11f114"/>
+        <value value="urn:uuid:e41cf5be-065d-4f48-9342-b399a34bf2c5"/>
     </identifier>
     <type value="document"/>
     <timestamp value="2019-09-17T09:01:00+10:00"/>
     <!--     Composition     -->
     <entry>
-        <fullUrl value="urn:uuid:72e7a36f-0cd5-4df6-bbc3-6d8084bc6171"/>
+        <fullUrl value="urn:uuid:3f883564-c6af-4ca3-83c7-f7c7b5239026"/>
         <resource>
             <Composition>
-                <id value="72e7a36f-0cd5-4df6-bbc3-6d8084bc6171"/>
+                <id value="3f883564-c6af-4ca3-83c7-f7c7b5239026"/>
                 <meta>
-                    <profile value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-composition"/>
+                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-composition"/>
                 </meta>
                 <language value="en-AU"/>
                 <!--  Multiple information-recipients of different resource type  -->
                 <extension url="http://hl7.org.au/fhir/StructureDefinition/information-recipient">
                     <valueReference>
-                        <reference value="urn:uuid:91d07c7b-8005-45fa-b7a5-52b2b5b99b04"/>
-                    </valueReference>
-                </extension>
-                <extension url="http://hl7.org.au/fhir/StructureDefinition/information-recipient">
-                    <valueReference>
-                        <reference value="RelatedPerson/rabbit-peter"/>
+                        <reference value="urn:uuid:aa0dbd5f-4c3a-4623-a94c-4a7735b79851"/>
                     </valueReference>
                 </extension>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
-                    <value value="urn:uuid:951e20032-7696-4143-9278-112728a88165"/>
+                    <value value="urn:uuid:b08d5b0a-5c5f-4e21-ae5d-f157405159ad"/>
                 </identifier>
                 <status value="final"/>
                 <type>
@@ -48,33 +43,22 @@
                     </coding>
                 </category>
                 <subject>
-                    <identifier>
-                        <type>
-                            <coding>
-                                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                                <code value="NI"/>
-                                <display value="National unique individual identifier"/>
-                            </coding>
-                            <text value="IHI"/>
-                        </type>
-                        <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
-                        <value value="8003608833357361"/>
-                    </identifier>
+                    <reference value="urn:uuid:aa0dbd5f-4c3a-4623-a94c-4a7735b79851"/>
                 </subject>
                 <date value="2019-09-17T09:00:00+10:00"/>
                 <author>
-                    <reference value="urn:uuid:02de5993-7f97-45f5-9536-a14f3e6ade45"/>
+                    <reference value="urn:uuid:7adbe61a-fe69-4dc8-b2f6-a9e55a8b2127"/>
                 </author>
                 <title value="Patient Summary"/>
                 <attester>
                     <mode value="legal"/>
                     <time value="2019-09-17T09:00:00+10:00"/>
                     <party>
-                        <reference value="urn:uuid:02de5993-7f97-45f5-9536-a14f3e6ade45"/>
+                        <reference value="urn:uuid:7adbe61a-fe69-4dc8-b2f6-a9e55a8b2127"/>
                     </party>
                 </attester>
                 <custodian>
-                    <reference value="urn:uuid:744a02aa-0056-461e-bdf2-9f46eb0e524c"/>
+                    <reference value="urn:uuid:4a78dc16-a7d0-4fc4-a505-3efd53012ac6"/>
                 </custodian>
                 <section>
                     <title value="Medicines"/>
@@ -84,11 +68,26 @@
                             <code value="10160-0"/>
                         </coding>
                     </code>
+                    <text>
+                        <status value="additional"/>
+                        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                            <table border="5">
+                                <caption>Medicines</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Medication</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Reaptan 10 mg/10 mg (perindopril arginine/amlodipine) tablet, 10</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </text>
                     <entry>
-                        <reference value="urn:uuid:e1f2992f-116f-48d8-8105-2d8bf0155146"/>
-                    </entry>
-                    <entry>
-                        <reference value="urn:uuid:d169df05-cee5-4561-a4b6-64f3ed4a99a6"/>
+                        <reference value="urn:uuid:906f441e-de7f-4154-8487-8f3dac849c28"/>
                     </entry>
                 </section>
                 <section>
@@ -100,31 +99,69 @@
                             <display value="Allergies and adverse reactions Document"/>
                         </coding>
                     </code>
-                    <emptyReason>
-                        <coding>
-                            <system value="http://terminology.hl7.org/CodeSystem/list-empty-reason"/>
-                            <code value="unavailable"/>
-                            <display value="Unavailable"/>
-                        </coding>
-                    </emptyReason>
+                    <text>
+                        <status value="additional"/>
+                        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                            <p>Intolerance to lactose</p>
+                        </div>
+                    </text>
+                    <entry>
+                        <reference value="urn:uuid:3d6d0334-b72b-49f3-9932-bc7befa84977"/>
+                    </entry>
                 </section>
                 <section>
-                    <title value="Medical History"/>
+                    <title value="Problems"/>
                     <code>
                         <coding>
-                            <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
-                            <code value="101.16117"/>
-                            <display value="Medical History"/>
+                            <system value="http://loinc.org"/>
+                            <code value="11450-4"/>
+                            <display value="Problem list - Reported"/>
                         </coding>
                     </code>
+                    <text>
+                        <status value="additional"/>
+                        <div xmlns="http://www.w3.org/1999/xhtml">
+                            <table border="5">
+                                <caption>Problems and Diagnoses</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Condition</th>
+                                        <th>Onset</th>
+                                        <th>Abatement / Resolution</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Chronic kidney disease</td>
+                                        <td>2019</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Right lower zone pneumonia</td>
+                                        <td>March 2019</td>
+                                        <td>April 2019</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table border="5">
+                                <caption>Procedures</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Procedure</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Total replacement of left knee joint</td>
+                                        <td>27 February 2019</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </text>
                     <entry>
-                        <reference value="urn:uuid:b021320c-bc5e-4ae8-b9fc-1ed2d876e889"/>
-                    </entry>
-                    <entry>
-                        <reference value="urn:uuid:5b87a5b0-bb32-43ad-96d5-925e085a0649"/>
-                    </entry>
-                    <entry>
-                        <reference value="urn:uuid:53c0d3a3-7fea-49c4-bc42-e997debcea1b"/>
+                        <reference value="urn:uuid:441d4811-87bd-4979-a6bf-e097664b903f"/>
                     </entry>
                 </section>
                 <section>
@@ -136,19 +173,40 @@
                             <display value="History of Immunization Narrative"/>
                         </coding>
                     </code>
+                    <text>
+                        <status value="additional"/>
+                        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                            <table border="5">
+                                <caption>Immunisations</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Vaccine</th>
+                                        <th>Date administered</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Pfizer Comirnaty</td>
+                                        <td>17 June 2021</td>
+                                        <td/>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </text>
                     <entry>
-                        <reference value="urn:uuid:3aa565a7-827c-4243-9c0b-d138e9f607a8"/>
+                        <reference value="urn:uuid:e704739d-4139-403c-8ce1-776cb1f25210"/>
                     </entry>
                 </section>
             </Composition>
         </resource>
     </entry>
-    <!--     Patient 91d07c7b-8005-45fa-b7a5-52b2b5b99b04    -->
-    <!-- <entry>
-        <fullUrl value="urn:uuid:91d07c7b-8005-45fa-b7a5-52b2b5b99b04"/>
+    <!--     Patient -->
+    <entry>
+        <fullUrl value="urn:uuid:aa0dbd5f-4c3a-4623-a94c-4a7735b79851"/>
         <resource>
             <Patient>
-                <id value="91d07c7b-8005-45fa-b7a5-52b2b5b99b04"/>
+                <id value="aa0dbd5f-4c3a-4623-a94c-4a7735b79851"/>
                 <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
                     <valueAddress>
                         <text value="China"/>
@@ -286,13 +344,13 @@
                 </communication>
             </Patient>
         </resource>
-    </entry> -->
+    </entry>
     <!--     PractitionerRole     -->
     <entry>
-        <fullUrl value="urn:uuid:02de5993-7f97-45f5-9536-a14f3e6ade45"/>
+        <fullUrl value="urn:uuid:7adbe61a-fe69-4dc8-b2f6-a9e55a8b2127"/>
         <resource>
             <PractitionerRole>
-                <id value="02de5993-7f97-45f5-9536-a14f3e6ade45"/>
+                <id value="7adbe61a-fe69-4dc8-b2f6-a9e55a8b2127"/>
                 <identifier>
                     <type>
                         <coding>
@@ -433,11 +491,11 @@
         </resource>
     </entry> -->
     <!--     Organization     -->
-    <!-- <entry>
-        <fullUrl value="urn:uuid:744a02aa-0056-461e-bdf2-9f46eb0e524c"/>
+    <entry>
+        <fullUrl value="urn:uuid:4a78dc16-a7d0-4fc4-a505-3efd53012ac6"/>
         <resource>
             <Organization>
-                <id value="744a02aa-0056-461e-bdf2-9f46eb0e524c"/>
+                <id value="4a78dc16-a7d0-4fc4-a505-3efd53012ac6"/>
 
                 <type>
                     <coding>
@@ -467,284 +525,154 @@
                 </address>
             </Organization>
         </resource>
-    </entry> -->
-    <!--     MedicationStatement     -->
-    <entry>
-        <fullUrl value="urn:uuid:e1f2992f-116f-48d8-8105-2d8bf0155146"/>
-        <resource>
-            <MedicationStatement>
-                <id value="e1f2992f-116f-48d8-8105-2d8bf0155146"/>
-                <status value="active"/>
-                <medicationCodeableConcept>
-                    <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="22087011000036100"/>
-                        <display value="candesartan cilexetil 32 mg tablet"/>
-                    </coding>
-                    <text value="Candesartan 32mg"/>
-                </medicationCodeableConcept>
-                <subject>
-                    <reference value="urn:uuid:91d07c7b-8005-45fa-b7a5-52b2b5b99b04"/>
-                    <identifier>
-                        <type>
-                            <coding>
-                                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                                <code value="NI"/>
-                                <display value="National unique individual identifier"/>
-                            </coding>
-                            <text value="IHI"/>
-                        </type>
-                        <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
-                        <value value="8003608833357361"/>
-                    </identifier>
-                </subject>
-                <dosage>
-                    <text value="1 tablet daily"/>
-                    <timing>
-                        <repeat>
-                            <frequency value="1"/>
-                            <period value="1"/>
-                            <periodUnit value="d"/>
-                        </repeat>
-                    </timing>
-                    <doseAndRate>
-                        <doseQuantity>
-                            <value value="1"/>
-                            <unit value="tablet"/>
-                            <system value="http://snomed.info/sct"/>
-                            <code value="63011000036109"/>
-                        </doseQuantity>
-                    </doseAndRate>
-                </dosage>
-            </MedicationStatement>
-        </resource>
     </entry>
+    <!--     MedicationRequest     -->
     <entry>
-        <fullUrl value="urn:uuid:d169df05-cee5-4561-a4b6-64f3ed4a99a6"/>
+        <fullUrl value="urn:uuid:906f441e-de7f-4154-8487-8f3dac849c28"/>
         <resource>
-            <MedicationStatement>
-                <id value="d169df05-cee5-4561-a4b6-64f3ed4a99a6"/>
-                <status value="active"/>
-                <medicationCodeableConcept>
-                    <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="23358011000036102"/>
-                        <display value="metformin hydrochloride 500 mg tablet"/>
-                    </coding>
-                    <text value="Metformin 500mg"/>
-                </medicationCodeableConcept>
-                <subject>
-                    <reference value="urn:uuid:91d07c7b-8005-45fa-b7a5-52b2b5b99b04"/>
-                    <identifier>
-                        <type>
+            <MedicationRequest xmlns="http://hl7.org/fhir">
+                <id value="906f441e-de7f-4154-8487-8f3dac849c28"/>
+                <contained>
+                    <Medication>
+                        <id value="med1"/>
+                        <code>
                             <coding>
-                                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                                <code value="NI"/>
-                                <display value="National unique individual identifier"/>
+                                <system value="http://snomed.info/sct"/>
+                                <code value="926213011000036100"/>
                             </coding>
-                            <text value="IHI"/>
-                        </type>
-                        <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
-                        <value value="8003608833357361"/>
-                    </identifier>
+                            <text value="Reaptan 10 mg/10 mg (perindopril arginine/amlodipine) tablet, 10"/>
+                        </code>
+                    </Medication>
+                </contained>
+                <status value="active"/>
+                <intent value="order"/>
+                <medicationReference>
+                    <reference value="#med1"/>
+                </medicationReference>
+                <subject>
+                    <reference value="urn:uuid:aa0dbd5f-4c3a-4623-a94c-4a7735b79851"/>
                 </subject>
-                <dosage>
-                    <text value="1 bd"/>
-                    <timing>
-                        <repeat>
-                            <frequency value="2"/>
-                            <period value="1"/>
-                            <periodUnit value="d"/>
-                        </repeat>
-                    </timing>
-                    <doseAndRate>
-                        <doseQuantity>
-                            <value value="1"/>
-                            <unit value="tablet"/>
-                            <system value="http://snomed.info/sct"/>
-                            <code value="63011000036109"/>
-                        </doseQuantity>
-                    </doseAndRate>
-                </dosage>
-            </MedicationStatement>
+            </MedicationRequest>
         </resource>
     </entry>
     <!--     Condition     -->
     <entry>
-        <fullUrl value="urn:uuid:b021320c-bc5e-4ae8-b9fc-1ed2d876e889"/>
+        <fullUrl value="urn:uuid:441d4811-87bd-4979-a6bf-e097664b903f"/>
         <resource>
-            <Condition>
-                <id value="b021320c-bc5e-4ae8-b9fc-1ed2d876e889"/>
-                <clinicalStatus>
-                    <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
-                        <code value="resolved"/>
-                        <display value="Resolved"/>
-                    </coding>
-                </clinicalStatus>
-                <category>
-                    <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
-                        <code value="problem-list-item"/>
-                        <display value="Problem List Item"/>
-                    </coding>
-                </category>
-                <code>
-                    <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="301001009"/>
-                        <display value="Right lower zone pneumonia"/>
-                    </coding>
-                </code>
-                <subject>
-                    <identifier>
-                        <type>
-                            <coding>
-                                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                                <code value="NI"/>
-                                <display value="National unique individual identifier"/>
-                            </coding>
-                            <text value="IHI"/>
-                        </type>
-                        <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
-                        <value value="8003608833357361"/>
-                    </identifier>
-                </subject>
-                <onsetDateTime value="2019-03"/>
-                <abatementDateTime value="2019-04-03"/>
-                <recorder>
-                    <reference value="urn:uuid:02de5993-7f97-45f5-9536-a14f3e6ade45"/>
-                </recorder>
-            </Condition>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="urn:uuid:5b87a5b0-bb32-43ad-96d5-925e085a0649"/>
-        <resource>
-            <Condition>
-                <id value="5b87a5b0-bb32-43ad-96d5-925e085a0649"/>
+            <Condition xmlns="http://hl7.org/fhir">
+                <id value="441d4811-87bd-4979-a6bf-e097664b903f"/>
                 <clinicalStatus>
                     <coding>
                         <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
                         <code value="active"/>
                         <display value="Active"/>
                     </coding>
+                    <text value="Active"/>
                 </clinicalStatus>
-                <category>
+                <verificationStatus>
                     <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
-                        <code value="problem-list-item"/>
-                        <display value="Problem List Item"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+                        <code value="confirmed"/>
                     </coding>
-                </category>
+                </verificationStatus>
+                <severity>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="24484000"/>
+                        <display value="Severe"/>
+                    </coding>
+                </severity>
                 <code>
                     <coding>
                         <system value="http://snomed.info/sct"/>
-                        <code value="49436004"/>
-                        <display value="Atrial fibrillation"/>
+                        <code value="709044004"/>
+                        <display value="Chronic kidney disease"/>
                     </coding>
                 </code>
                 <subject>
-                    <identifier>
-                        <type>
-                            <coding>
-                                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                                <code value="NI"/>
-                                <display value="National unique individual identifier"/>
-                            </coding>
-                            <text value="IHI"/>
-                        </type>
-                        <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
-                        <value value="8003608833357361"/>
-                    </identifier>
+                    <reference value="urn:uuid:aa0dbd5f-4c3a-4623-a94c-4a7735b79851"/>
                 </subject>
-                <onsetDateTime value="2017"/>
-                <recorder>
-                    <reference value="urn:uuid:02de5993-7f97-45f5-9536-a14f3e6ade45"/>
-                </recorder>
             </Condition>
-        </resource>
-    </entry>
-    <!--     Procedure     -->
-    <entry>
-        <fullUrl value="urn:uuid:53c0d3a3-7fea-49c4-bc42-e997debcea1b"/>
-        <resource>
-            <Procedure>
-                <id value="53c0d3a3-7fea-49c4-bc42-e997debcea1b"/>
-                <status value="completed"/>
-                <category>
-                    <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="7922000"/>
-                        <display value="General treatment"/>
-                    </coding>
-                </category>
-                <code>
-                    <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="443681002"/>
-                        <display value="Total replacement of left knee joint"/>
-                    </coding>
-                </code>
-                <subject>
-                    <identifier>
-                        <type>
-                            <coding>
-                                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                                <code value="NI"/>
-                                <display value="National unique individual identifier"/>
-                            </coding>
-                            <text value="IHI"/>
-                        </type>
-                        <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
-                        <value value="8003608833357361"/>
-                    </identifier>
-                </subject>
-                <performedDateTime value="2019-02-27"/>
-                <recorder>
-                    <reference value="urn:uuid:02de5993-7f97-45f5-9536-a14f3e6ade45"/>
-                </recorder>
-                <bodySite>
-                    <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="735263003"/>
-                        <display value="Entire left knee joint"/>
-                    </coding>
-                </bodySite>
-            </Procedure>
         </resource>
     </entry>
     <!--     Immunization     -->
     <entry>
-        <fullUrl value="urn:uuid:3aa565a7-827c-4243-9c0b-d138e9f607a8"/>
+        <fullUrl value="urn:uuid:e704739d-4139-403c-8ce1-776cb1f25210"/>
         <resource>
-            <Immunization>
-                <id value="3aa565a7-827c-4243-9c0b-d138e9f607a8"/>
+            <Immunization xmlns="http://hl7.org/fhir">
+                <id value="urn:uuid:e704739d-4139-403c-8ce1-776cb1f25210"/>
                 <status value="completed"/>
                 <vaccineCode>
                     <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="837281000168100"/>
-                        <display value="diphtheria 2 units + tetanus 20 units vaccine injection, 0.5 mL syringe"/>
+                        <system value="https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats"/>
+                        <code value="COMIRN"/>
                     </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="1525011000168107"/>
+                        <display value="Comirnaty"/>
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="1708651000168101"/>
+                    </coding>
+                    <text value="Pfizer Comirnaty"/>
                 </vaccineCode>
                 <patient>
+                    <reference value="urn:uuid:aa0dbd5f-4c3a-4623-a94c-4a7735b79851"/>
+                </patient>
+                <occurrenceDateTime value="2021-06-17"/>
+                <recorded value="2021-06-17"/>
+                <primarySource value="true"/>
+            </Immunization>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:3d6d0334-b72b-49f3-9932-bc7befa84977"/>
+        <resource>
+            <AllergyIntolerance xmlns="http://hl7.org/fhir">
+                <id value="3d6d0334-b72b-49f3-9932-bc7befa84977"/>
+                <clinicalStatus>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+                        <code value="active"/>
+                        <display value="Active"/>
+                    </coding>
+                </clinicalStatus>
+                <verificationStatus>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+                        <code value="confirmed"/>
+                        <display value="Confirmed"/>
+                    </coding>
+                </verificationStatus>
+                <patient>
                     <identifier>
+                        <extension url="http://hl7.org.au/fhir/StructureDefinition/ihi-status">
+                            <valueCoding>
+                                <system value="https://healthterminologies.gov.au/fhir/CodeSystem/ihi-status-1"/>
+                                <code value="active"/>
+                            </valueCoding>
+                        </extension>
+                        <extension url="http://hl7.org.au/fhir/StructureDefinition/ihi-record-status">
+                            <valueCoding>
+                                <system value="https://healthterminologies.gov.au/fhir/CodeSystem/ihi-record-status-1"/>
+                                <code value="verified"/>
+                                <display value="verified"/>
+                            </valueCoding>
+                        </extension>
                         <type>
                             <coding>
                                 <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
                                 <code value="NI"/>
-                                <display value="National unique individual identifier"/>
                             </coding>
                             <text value="IHI"/>
                         </type>
                         <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
-                        <value value="8003608833357361"/>
+                        <value value="8003608333647261"/>
                     </identifier>
                 </patient>
-                <occurrenceDateTime value="2018-04-15"/>
-                <primarySource value="true"/>
-            </Immunization>
+            </AllergyIntolerance>
         </resource>
     </entry>
 </Bundle>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="lactose-03"/>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="active"/>
+      <display value="Active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+      <code value="confirmed"/>
+      <display value="Confirmed"/>
+    </coding>
+  </verificationStatus>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="782415009"/>
+      <display value="Intolerance to lactose"/>
+    </coding>
+  </code>
+  <patient>
+    <reference value="Patient/banks-mia-leanne"/>
+  </patient>
+</AllergyIntolerance>

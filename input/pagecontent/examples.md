@@ -10,9 +10,6 @@ In addition to the examples defined in this implementation, synthetic (realistic
 {% include example-list-generator.md %}
 <!-- ================================================ -->
 
-No examples have been defined for this implementation guide.
-
-
 
 
 

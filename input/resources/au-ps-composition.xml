@@ -74,7 +74,7 @@
 			<sliceName value="medicationStatement"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org.au/fhir/ips/StructureDefinition/MedicationStatement-au-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"/>
 			</type>
 		</element>
 		<element id="Composition.section:sectionMedications.entry:medicationRequest">
@@ -269,12 +269,20 @@
 				<rules value="open"/>
 			</slicing>
 		</element>
-		<element id="Composition.section:sectionResults.entry:results-observation">
+		<element id="Composition.section:sectionResults.entry:results-observation-laboratory-pathology">
 			<path value="Composition.section.entry"/>
-			<sliceName value="results-observation"/>
+			<sliceName value="results-observation-laboratory-pathology"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org.au/fhir/ips/StructureDefinition/Observation-results-au-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-pathology-uv-ips"/>
+			</type>
+		</element>
+		<element id="Composition.section:sectionResults.entry:results-observation-radiology">
+			<path value="Composition.section.entry"/>
+			<sliceName value="results-observation-radiology"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-radiology-uv-ips"/>
 			</type>
 		</element>
 		<element id="Composition.section:sectionResults.entry:results-diagnosticReport">
@@ -282,7 +290,7 @@
 			<sliceName value="results-diagnosticReport"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org.au/fhir/ips/StructureDefinition/DiagnosticReport-au-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips"/>
 			</type>
 		</element>
 		<element id="Composition.section:sectionVitalSigns">

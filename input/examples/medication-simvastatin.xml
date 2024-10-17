@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="simvastatin"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="320000009"/>
+      <display value="Simvastatin 40 mg oral tablet"/>
+    </coding>
+    <text value="Simvastatin 40 MG Disintegrating Oral Tablet"/>
+  </code>
+</Medication>

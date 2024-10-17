@@ -1,0 +1,32 @@
+<Immunization xmlns="http://hl7.org/fhir">
+	<id value="covid-01"/>
+	<status value="completed"/>
+	<vaccineCode>
+		<coding>
+			<system value="https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats"/>
+			<code value="COMIRN"/>
+		</coding>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="1525011000168107"/>
+			<display value="Comirnaty"/>
+		</coding>
+		<text value="Pfizer Comirnaty"/>
+	</vaccineCode>
+	<patient>
+		<identifier>
+			<type>
+				<coding>
+					<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+					<code value="MC"/>
+				</coding>
+				<text value="Medicare Number"/>
+			</type>
+			<system value="http://ns.electronichealth.net.au/id/medicare-number"/>
+			<value value="6951449677"/>
+		</identifier>
+	</patient>
+	<occurrenceDateTime value="2021-06-17"/>
+	<recorded value="2021-06-17"/>
+	<primarySource value="true"/>
+</Immunization>
