@@ -19,10 +19,10 @@
     <reference value="#med1"/>
   </medicationReference>
   <subject>
-    <reference value="Patient/wang-li"/>
+    <reference value="Patient/howe-deangelo"/>
   </subject>
   <authoredOn value="2018-07-15"/>
   <requester>
-    <display value="Surgeon David"/>
+    <display value="GP Jarred"/>
   </requester>
 </MedicationRequest>

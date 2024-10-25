@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Location xmlns="http://hl7.org/fhir">
+  <id value="elimbah-medical-centre"/>
+  <meta>
+    <profile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-location"/>
+  </meta>
+  <name value="Elimbah Medical Centre"/>
+  <mode value="instance"/>
+  <address>
+    <line value="199 Copper Esp"/>
+    <city value="Elimbah"/>
+    <state value="QLD"/>
+    <postalCode value="4516"/>
+  </address>
+  <physicalType>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+      <code value="si"/>
+      <display value="Site"/>
+    </coding>
+  </physicalType>
+  <managingOrganization>
+    <reference value="Organization/elimbah-medical-centre"/>
+  </managingOrganization>
+</Location>

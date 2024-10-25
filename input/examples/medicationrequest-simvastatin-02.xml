@@ -7,6 +7,6 @@
         <reference value="Medication/simvastatin"/>
     </medicationReference>
     <subject>
-        <reference value="Patient/wang-li"/>
+        <reference value="Patient/howe-deangelo"/>
     </subject>
 </MedicationRequest>

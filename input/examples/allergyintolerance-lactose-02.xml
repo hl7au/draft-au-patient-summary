@@ -38,7 +38,7 @@
         <text value="IHI"/>
       </type>
       <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
-      <value value="8003608333647261"/>
+      <value value="8003608000311621"/>
     </identifier>
   </patient>
 </AllergyIntolerance>

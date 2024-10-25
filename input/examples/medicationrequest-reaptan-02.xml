@@ -19,6 +19,6 @@
         <reference value="#med1"/>
     </medicationReference>
     <subject>
-        <reference value="Patient/wang-li"/>
+        <reference value="Patient/howe-deangelo"/>
     </subject>
 </MedicationRequest>

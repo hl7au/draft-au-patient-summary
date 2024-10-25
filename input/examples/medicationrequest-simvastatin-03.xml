@@ -7,10 +7,10 @@
         <reference value="Medication/simvastatin"/>
     </medicationReference>
     <subject>
-        <reference value="Patient/wang-li"/>
+        <reference value="Patient/howe-deangelo"/>
     </subject>
     <authoredOn value="2020-07-15"/>
     <requester>
-        <display value="Surgeon David"/>
+        <display value="GP Jarred"/>
         </requester>
     </MedicationRequest>
