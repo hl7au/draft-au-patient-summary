@@ -22,7 +22,7 @@ This guide is divided into several pages which are listed at the top of each pag
   - [Artefacts Summary](artifacts.html): This is a placeholder for when content becomes available.
   - [Profiles and Extensions](profiles-and-extensions.html): This is a placeholder for when content becomes available.
   - [Terminology](terminology.html): This is a placeholder for when content becomes available.
-- [Examples](examples.html): This is a placeholder for when content becomes available.
-- [Support](downloads.html): This is a placeholder for when content becomes available.
-  - [Downloads](downloads.html): This is a placeholder for when content becomes available.
+- [Examples](examples.html): This page lists all the examples used in this guide.
+- [Support](downloads.html): These pages provide supporting material for implementation of AU Core.
+  - [Downloads](downloads.html): This page provides links to downloadable artefacts.
   - [License and Legal](license.html): This page outlines the license and legal requirements for material in AU Core.
