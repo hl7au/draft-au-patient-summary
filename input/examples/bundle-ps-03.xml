@@ -3,6 +3,7 @@
     <id value="ps-03"/>
     <meta>
         <lastUpdated value="2019-09-17T09:01:00+10:00"/>
+        <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-composition"/>
     </meta>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
@@ -17,7 +18,7 @@
             <Composition xmlns="http://hl7.org/fhir">
                 <id value="472d2cd8-cb3f-4450-854a-fae62130324c"/>
                 <meta>
-                    <profile value="http://hl7.org.au/fhir/aups/StructureDefinition/au-ps-composition"/>
+                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-composition"/>
                 </meta>
                 <language value="en-AU"/>
                 <!-- Multiple information-recipients of different resource type -->
@@ -26,11 +27,6 @@
                         <reference value="urn:uuid:36298f0d-9a50-48f5-a739-851d8bc8f018"/>
                     </valueReference>
                 </extension>
-                <!-- <extension url="http://hl7.org.au/fhir/StructureDefinition/information-recipient">
-                    <valueReference>
-                        <reference value="RelatedPerson/rabbit-peter"/>
-                    </valueReference>
-                </extension>-->
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:0407733f-398c-4109-a35d-4dc16d3e47d1"/>
@@ -132,9 +128,9 @@
                     <title value="Medical History"/>
                     <code>
                         <coding>
-                            <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
-                            <code value="101.16117"/>
-                            <display value="Medical History"/>
+                            <system value="http://loinc.org"/>
+                            <code value="11450-4"/>
+                            <display value="Problem list - Reported"/>
                         </coding>
                     </code>
                     <text>
@@ -162,21 +158,6 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <table border="5">
-                                <caption>Procedures</caption>
-                                <thead>
-                                    <tr>
-                                        <th>Procedure</th>
-                                        <th>Date</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Total replacement of left knee joint</td>
-                                        <td>27 February 2019</td>
-                                    </tr>
-                                </tbody>
-                            </table>
                         </div>
                     </text>
                     <entry>
@@ -184,9 +165,6 @@
                     </entry>
                     <entry>
                         <reference value="urn:uuid:23ff740b-51d2-44c3-ae5a-af69dfbcd11f"/>
-                    </entry>
-                    <entry>
-                        <reference value="urn:uuid:e7773724-eef0-4a8e-ab20-f5d25e3efeab"/>
                     </entry>
                 </section>
                 <section>
@@ -232,6 +210,9 @@
         <resource>
             <Patient xmlns="http://hl7.org/fhir">
                 <id value="36298f0d-9a50-48f5-a739-851d8bc8f018"/>
+                <meta>
+                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-patient"/>
+                </meta>
                 <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
                     <valueAddress>
                         <text value="China"/>
@@ -376,6 +357,9 @@
         <resource>
             <PractitionerRole xmlns="http://hl7.org/fhir">
                 <id value="c2f13b02-23fa-4a14-a95e-8ecc811454f6"/>
+                <meta>
+                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-practitionerrole"/>
+                </meta>
                 <identifier>
                     <type>
                         <coding>
@@ -437,6 +421,9 @@
         <resource>
             <Practitioner xmlns="http://hl7.org/fhir">
                 <id value="64af843a-685d-4383-b013-cfaf4eb4f627"/>
+                <meta>
+                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-practitioner"/>
+                </meta>
                 <identifier>
                     <type>
                         <coding>
@@ -512,6 +499,9 @@
         <resource>
             <Organization xmlns="http://hl7.org/fhir">
                 <id value="113f3887-9b92-4b4e-be67-73f11bb9fed9"/>
+                <meta>
+                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-organization"/>
+                </meta>
                 <identifier>
                     <type>
                         <coding>
@@ -558,6 +548,9 @@
         <resource>
             <MedicationStatement xmlns="http://hl7.org/fhir">
                 <id value="374e5ac9-9262-42ce-8400-63afb0ae7170"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"/>
+                </meta>
                 <status value="active"/>
                 <medicationCodeableConcept>
                     <coding>
@@ -582,6 +575,9 @@
                         <value value="8003608833357361"/>
                     </identifier>
                 </subject>
+                <effectivePeriod>
+                    <start value="2024"/>
+                </effectivePeriod>
                 <dosage>
                     <text value="1 tablet daily"/>
                     <timing>
@@ -608,6 +604,9 @@
         <resource>
             <MedicationStatement xmlns="http://hl7.org/fhir">
                 <id value="a214910f-1067-49ef-bd01-4f1eb7f6646a"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"/>
+                </meta>
                 <status value="active"/>
                 <medicationCodeableConcept>
                     <coding>
@@ -632,6 +631,9 @@
                         <value value="8003608833357361"/>
                     </identifier>
                 </subject>
+                <effectivePeriod>
+                    <start value="2024"/>
+                </effectivePeriod>
                 <dosage>
                     <text value="1 bd"/>
                     <timing>
@@ -659,6 +661,9 @@
         <resource>
             <Condition xmlns="http://hl7.org/fhir">
                 <id value="13556c94-ee02-4232-b19f-d0b60a61f7cd"/>
+                <meta>
+                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-condition"/>
+                </meta>
                 <clinicalStatus>
                     <coding>
                         <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
@@ -708,6 +713,9 @@
         <resource>
             <Condition xmlns="http://hl7.org/fhir">
                 <id value="23ff740b-51d2-44c3-ae5a-af69dfbcd11f"/>
+                <meta>
+                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-condition"/>
+                </meta>
                 <clinicalStatus>
                     <coding>
                         <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
@@ -751,62 +759,15 @@
             </Condition>
         </resource>
     </entry>
-    <!--    Procedure    -->
-    <entry>
-        <fullUrl value="urn:uuid:e7773724-eef0-4a8e-ab20-f5d25e3efeab"/>
-        <resource>
-            <Procedure xmlns="http://hl7.org/fhir">
-                <id value="e7773724-eef0-4a8e-ab20-f5d25e3efeab"/>
-                <status value="completed"/>
-                <category>
-                    <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="7922000"/>
-                        <display value="General treatment"/>
-                    </coding>
-                </category>
-                <code>
-                    <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="443681002"/>
-                        <display value="Total replacement of left knee joint"/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value="urn:uuid:36298f0d-9a50-48f5-a739-851d8bc8f018"/>
-                    <identifier>
-                        <type>
-                            <coding>
-                                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                                <code value="NI"/>
-                                <display value="National unique individual identifier"/>
-                            </coding>
-                            <text value="IHI"/>
-                        </type>
-                        <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
-                        <value value="8003608833357361"/>
-                    </identifier>
-                </subject>
-                <performedDateTime value="2019-02-27"/>
-                <recorder>
-                    <reference value="urn:uuid:c2f13b02-23fa-4a14-a95e-8ecc811454f6"/>
-                </recorder>
-                <bodySite>
-                    <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="735263003"/>
-                        <display value="Entire left knee joint"/>
-                    </coding>
-                </bodySite>
-            </Procedure>
-        </resource>
-    </entry>
     <!--    Immunization    -->
     <entry>
         <fullUrl value="urn:uuid:92a2bebf-ada8-445b-b87b-f1c3022604a5"/>
         <resource>
             <Immunization xmlns="http://hl7.org/fhir">
                 <id value="92a2bebf-ada8-445b-b87b-f1c3022604a5"/>
+                <meta>
+                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-immunization"/>
+                </meta>
                 <status value="completed"/>
                 <vaccineCode>
                     <coding>
