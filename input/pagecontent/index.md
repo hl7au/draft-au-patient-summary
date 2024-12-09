@@ -1,4 +1,6 @@
 
+{% include stu_note.md -%}
+
 ### Introduction
 This version of the HL7 AU Patient Summary Implementation Guide was created as part of a tooling test to explore modelling options. It is not intended for further development or progression.
 

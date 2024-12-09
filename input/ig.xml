@@ -22,7 +22,7 @@
 			<use value="work"/>
 		</telecom>
 	</contact>
-	<description value="Draft Australian  : A brief description of what MyIG is about (probably the same text as in your readme)"/>
+	<description value="This implementation guide is provided as a proof of concept to explore and evaluate potential approaches for aligning HL7 Australia Patient Summary with AU Core and IPS and to inform future development efforts."/>
 	<jurisdiction>
 		<coding>
 			<system value="urn:iso:std:iso:3166"/>
