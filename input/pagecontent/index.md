@@ -1,6 +1,10 @@
 
 ### Introduction
-TBD
+This version of the HL7 AU Patient Summary Implementation Guide was created as part of a tooling test to explore modelling options. It is not intended for further development or progression.
+
+This draft is based on the International Patient Summary (IPS) specification and AU Core.
+
+The official HL7 AU Patient Summary Implementation Guide will be developed and progressed in a separate repository.
 
 ## Dependencies
 {% include dependency-table.xhtml %}
