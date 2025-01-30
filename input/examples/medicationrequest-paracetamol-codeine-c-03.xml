@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationRequest xmlns="http://hl7.org/fhir">
+    <id value="paracetamol-codeine-c-03"/>
+    <meta>
+        <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-c"/>
+    </meta>
+    <status value="unknown"/>
+    <intent value="order"/>
+    <medicationCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="79115011000036100"/>
+        </coding>
+    </medicationCodeableConcept>
+    <subject>
+        <reference value="Patient/bennelong-anne"/>
+    </subject>
+</MedicationRequest>

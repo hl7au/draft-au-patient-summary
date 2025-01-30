@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MedicationRequest xmlns="http://hl7.org/fhir">
-    <id value="paracetamol-codeine-03"/>
+    <id value="paracetamol-codeine-d-02"/>
+    <meta>
+        <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-d"/>
+    </meta>
     <status value="unknown"/>
     <intent value="order"/>
     <medicationCodeableConcept>
@@ -10,7 +13,7 @@
         </coding>
     </medicationCodeableConcept>
     <subject>
-        <reference value="Patient/bennelong-anne"/>
+        <display value="bennelong-anne"/>
     </subject>
     <authoredOn value="2018-07-15"/>
     <requester>
