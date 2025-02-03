@@ -112,12 +112,6 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="StructureDefinition/au-ps-medicationrequest-x"/>
-			</reference>
-			<exampleBoolean value="false"/>
-		</resource>
-		<resource>
-			<reference>
 				<reference value="StructureDefinition/au-ps-condition"/>
 			</reference>
 			<exampleBoolean value="false"/>

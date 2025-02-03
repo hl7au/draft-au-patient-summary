@@ -153,9 +153,9 @@
         <element id="MedicationRequest.authoredOn">
             <path value="MedicationRequest.authoredOn"/>
             <short value="Created date"/>
-            <condition value="au-ps-medreq-01-e"/>
+            <condition value="au-core-medreq-01-e"/>
             <constraint>
-                <key value="au-ps-medreq-01-e"/>
+                <key value="au-core-medreq-01-e"/>
                 <severity value="error"/>
                 <human value="Date shall be precise to the day or, if not available, the Data Absent Reason extension shall be present"/>
                 <expression value="$this.hasValue() implies (extension('http://hl7.org/fhir/StructureDefinition/data-absent-reason').value.exists().not() and $this.toString().length() >= 10)"/>
