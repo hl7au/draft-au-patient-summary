@@ -825,14 +825,6 @@
 			<description value="Adjusted from AU Core example of an order for Simvastatin for high cholesterol that demonstrates representing medication as a reference to Medication resource. Patient: Deangelo HOWE."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-h"/>
 		</resource>
-		<resource>
-			<reference>
-				<reference value="MedicationRequest/paracetamol-codeine-01-x"/>
-			</reference>
-			<name value="MedicationRequest - prescription, paracetamol-codeine (IPS compliant)"/>
-			<description value="Adjusted from AU Core example of an order for paracetamol 500 mg + codeine phosphate hemihydrate 30 mg tablet illustrating missing data for status and requester. Patient:  Mrs. Anne Bennelong."/>
-			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-x"/>
-		</resource>
 		<!-- ORGANIZATION EXAMPLES -->
 		<resource>
 			<reference>
