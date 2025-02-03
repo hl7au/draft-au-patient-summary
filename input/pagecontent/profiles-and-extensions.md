@@ -182,7 +182,7 @@ Example conventions used for testing
   <tr>
     <td rowspan="9">au-ps-medicationrequest-e</td>
     <td rowspan="9"><a href="StructureDefinition-au-ps-medicationrequest-e.html">AU PS MedicationRequest E</a></td>
-    <td rowspan="9">Derive from IPS, apply AU Core constraints (noting AU Base integration issues), and state complies with AU Core.</td>
+    <td rowspan="9">Derived from IPS and constrained with AU Core rules where possible, without modifying IPS defined references, as changing references to different profiles is not allowed by the IG Publisher.</td>
     <td rowspan="3">Compliant with IPS and AU Core</td>
     <td><a href="MedicationRequest-simvastatin-01-e.html">simvastatin-01-e</a></td>
   </tr>

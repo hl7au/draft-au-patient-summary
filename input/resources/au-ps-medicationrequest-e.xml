@@ -4,9 +4,6 @@
     <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
         <valueInteger value="0"/>
     </extension>
-    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile">
-        <valueCanonical value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-medicationrequest"/>
-    </extension>
     <url value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-e"/>
     <version value="0.1.0"/>
     <name value="AUPSMedicationRequestE"/>
