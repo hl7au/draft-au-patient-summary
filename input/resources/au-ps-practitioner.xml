@@ -10,7 +10,7 @@
   <url value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-practitioner"/>
   <version value="0.1.0"/>
   <name value="AUPSPractitioner"/>
-  <title value="AU Patient Summary Practitioner"/>
+  <title value="AU PS Practitioner"/>
   <status value="draft"/>
   <experimental value="true"/>
   <description value="This profile is based on the AU Core profile, with IPS rules added as well (by reference to the IPS profile)."/>

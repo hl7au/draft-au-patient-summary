@@ -10,7 +10,7 @@
   <url value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-f"/>
   <version value="0.1.0"/>
   <name value="AUPSMedicationRequestF"/>
-  <title value="AU Patient Summary MedicationRequest F"/>
+  <title value="AU PS MedicationRequest F"/>
   <status value="draft"/>
   <experimental value="true"/>
   <description value="This profile is based on the AU Core profile, with IPS rules added as well (by reference to the IPS profile)."/>

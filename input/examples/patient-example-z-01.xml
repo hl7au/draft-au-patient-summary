@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir">
+    <id value="example-z-01"/>
+    <meta>
+        <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-patient-z"/>
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/individual-genderIdentity">
+        <extension url="value">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="446141000124107"/>
+                    <display value="Identifies as female gender (finding)"/>
+                </coding>
+            </valueCodeableConcept>
+        </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/individual-pronouns">
+        <extension url="value">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="LA29519-8"/>
+                    <display value="she/her/her/hers/herself"/>
+                </coding>
+            </valueCodeableConcept>
+        </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender">
+        <extension url="value">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="248152002"/>
+                </coding>
+                <text value="Female"/>
+            </valueCodeableConcept>
+        </extension>
+        <extension url="type">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="1515311000168102"/>
+                    <display value="Biological sex at birth"/>
+                </coding>
+            </valueCodeableConcept>
+        </extension>
+    </extension>
+    <telecom>
+        <system value="phone"/>
+        <value value="0270102724"/>
+        <use value="work"/>
+    </telecom>
+    <telecom>
+        <system value="phone"/>
+        <value value="0491574632"/>
+        <use value="mobile"/>
+    </telecom>
+    <telecom>
+        <system value="phone"/>
+        <value value="0270107520"/>
+        <use value="home"/>
+    </telecom>
+    <telecom>
+        <system value="email"/>
+        <value value="mia.banks@myownpersonaldomain.com"/>
+    </telecom>
+
+    <telecom>
+        <system value="phone"/>
+        <value value="270107520"/>
+        <use value="home"/>
+    </telecom>
+    <gender value="female"/>
+    <birthDate value="1983-08-25"/>
+    <address>
+        <line value="50 Sebastien St"/>
+        <city value="Minjary"/>
+        <state value="NSW"/>
+        <postalCode value="2720"/>
+        <country value="AU"/>
+    </address>
+</Patient>

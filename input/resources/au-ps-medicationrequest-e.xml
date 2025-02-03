@@ -10,7 +10,7 @@
     <url value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-e"/>
     <version value="0.1.0"/>
     <name value="AUPSMedicationRequestE"/>
-    <title value="AU Patient Summary MedicationRequest E"/>
+    <title value="AU PS MedicationRequest E"/>
     <status value="draft"/>
     <experimental value="true"/>
     <description value="This profile is based on the AU Core profile, with IPS rules added as well (by reference to the IPS profile)."/>
@@ -108,23 +108,7 @@
             </slicing>
         </element>
         <element id="MedicationRequest.medication[x]:medicationCodeableConcept.coding:pbs">
-            <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
-                <extension url="code">
-                    <valueCode value="SHALL:populate-if-known"/>
-                </extension>
-                <extension url="actor">
-                    <valueCanonical value="http://hl7.org.au/fhir/core/ActorDefinition/au-core-actor-responder"/>
-                </extension>
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
-                <extension url="code">
-                    <valueCode value="SHALL:no-error"/>
-                </extension>
-                <extension url="actor">
-                    <valueCanonical value="http://hl7.org.au/fhir/core/ActorDefinition/au-core-actor-requester"/>
-                </extension>
-            </extension>
-            <path value="MedicationRequest.medication[x].coding"/>
+           <path value="MedicationRequest.medication[x].coding"/>
             <sliceName value="pbs"/>
             <binding>
                 <strength value="required" />
@@ -133,22 +117,6 @@
             <mustSupport value="true"/>
         </element>
         <element id="MedicationRequest.medication[x]:medicationCodeableConcept.coding:amt">
-            <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
-                <extension url="code">
-                    <valueCode value="SHALL:populate-if-known"/>
-                </extension>
-                <extension url="actor">
-                    <valueCanonical value="http://hl7.org.au/fhir/core/ActorDefinition/au-core-actor-responder"/>
-                </extension>
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
-                <extension url="code">
-                    <valueCode value="SHALL:no-error"/>
-                </extension>
-                <extension url="actor">
-                    <valueCanonical value="http://hl7.org.au/fhir/core/ActorDefinition/au-core-actor-requester"/>
-                </extension>
-            </extension>
             <path value="MedicationRequest.medication[x].coding"/>
             <sliceName value="amt"/>
             <binding>
@@ -157,47 +125,7 @@
             </binding>
             <mustSupport value="true"/>
         </element>
-        <element id="MedicationRequest.medication[x]:medicationCodeableConcept.coding.extension">
-            <path value="MedicationRequest.medication[x].coding.extension"/>
-            <slicing>
-                <discriminator>
-                    <type value="value"/>
-                    <path value="url"/>
-                </discriminator>
-                <rules value="open"/>
-            </slicing>
-        </element>
-        <element id="MedicationRequest.medication[x]:medicationCodeableConcept.coding.extension:medicationClass">
-            <path value="MedicationRequest.medication[x].coding.extension"/>
-            <sliceName value="medicationClass"/>
-            <max value="1"/>
-            <type>
-                <code value="Extension"/>
-                <profile value="http://hl7.org.au/fhir/StructureDefinition/medication-type"/>
-            </type>
-        </element>
-        <element id="MedicationRequest.medication[x]:medicationCodeableConcept.text">
-            <path value="MedicationRequest.medication[x].text"/>
-            <short value="Medication primary text"/>
-            <definition value="A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.&#xD;&#xA;&#xD;&#xA;This may be a brand or generic name as suitable for the intent of the entry." />
-        </element>
         <element id="MedicationRequest.medication[x]:medicationReference">
-            <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
-                <extension url="code">
-                    <valueCode value="SHALL:populate-if-known"/>
-                </extension>
-                <extension url="actor">
-                    <valueCanonical value="http://hl7.org.au/fhir/core/ActorDefinition/au-core-actor-responder"/>
-                </extension>
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
-                <extension url="code">
-                    <valueCode value="SHALL:no-error"/>
-                </extension>
-                <extension url="actor">
-                    <valueCanonical value="http://hl7.org.au/fhir/core/ActorDefinition/au-core-actor-requester"/>
-                </extension>
-            </extension>
             <path value="MedicationRequest.medication[x]"/>
             <sliceName value="medicationReference"/>
             <short value="Prescribed Medication"/>
@@ -225,7 +153,6 @@
         <element id="MedicationRequest.authoredOn">
             <path value="MedicationRequest.authoredOn"/>
             <short value="Created date"/>
-            <min value="1"/>
             <condition value="au-ps-medreq-01-e"/>
             <constraint>
                 <key value="au-ps-medreq-01-e"/>
@@ -269,7 +196,6 @@
                 <code value="Dosage"/>
                 <profile value="http://hl7.org.au/fhir/StructureDefinition/au-dosage"/>
             </type>
-            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>
