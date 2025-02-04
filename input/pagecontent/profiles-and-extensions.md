@@ -1,23 +1,22 @@
-This section shows different profiling approaches used to develop draft AU PS profiles, ensuring compliance with AU Core and IPS in alignment with the [Profile Design Principles for AU Patient Summary](https://confluence.hl7.org/display/HAFWG/Profile+Design+Principles+for+AU+Patient+Summary). The goal of this testing is to determine the most effective way to profile AU PS resources while maintaining conformance to national and international requirements.
+This section shows different profiling approaches used to develop draft AU PS profiles, ensuring compliance with AU Core and IPS in alignment with the [Profile Design Principles for AU Patient Summary](https://confluence.hl7.org/display/HAFWG/Profile+Design+Principles+for+AU+Patient+Summary). The goal is to identify the most effective way to profile AU PS resources while maintaining conformance to national and international requirements.
 
-We are evaluating different profiling strategies to determine the impact on conformance, consistency, implementation practicality, and ease of use for implementers, e.g.:  
-- how different derivation approaches affect compliance with AU Core and IPS
+We are testing different profiling strategies to assess the impact on:  
+- how different derivation approaches align with AU Core and IPS
 - the impact of using compliance declaration and imposed profiles
-- is the profile easy to interpret and apply
-- tooling and validation support, i.e. can standard FHIR tooling process and enforce constraints
-- ease of use for implementers, including whether a single implementation guide can provide a full set of constraints reducing the need to reference multiple implementation guides (AU Base, AU Core, IPS) separately
-...to ensure that profiling decisions meet the technical conformance and also practical implementations needs..
+- whether the profiles are easy to interpret and apply
+- whether FHIR tooling can process and enforce constraints
+- ease of use for implementers, including whether a single implementation guide can provide all constraints reducing the need to reference AU Base, AU Core, and IPS separately
 
+### FHIR mechanism for ensuring compliance
 FHIR provides two key mechanisms for ensuring compliance across different specifications: 
 1. [StructureDefinition Complies With Profile (compliesWith)](https://hl7.org/fhir/extensions/StructureDefinition-structuredefinition-compliesWithProfile.html)
-   - Used to declare that a profile complies with a given standard (e.g., AU Core, IPS). 
-   - Allows flexibility since a profile does not need to be directly derived from AU Core or IPS but can still be declared compliant.
-   - Declaring compliesWith AU Core and IPS does not apply rules automatically. It states the intent to comply, meaning the profile needs to already meet all AU Core and IPS constraints to be considered compliant. A profile can only be compliant if it explicitly applies AU Core and IPS constraints. 
+   - Declares that a profile complies with a given standard (e.g., AU Core, IPS). 
+   - A profile does not need to be directly derived from AU Core or IPS but needs to meet all their constraints.
+   - Declaring compliesWith AU Core and IPS does not apply rules automatically. It states the intent to comply, meaning the profile itself needs to enforce the necessary constraints. 
 1. [StructureDefinition Dependent Profiles (imposeProfile)](https://hl7.org/fhir/extensions/StructureDefinition-structuredefinition-imposeProfile.html)
-   - Used to enforce conformance to another profile by ensuring the derived profile fully adopts the imposed constraints. 
-   - More restrictive than [StructureDefinition Complies With Profile](https://hl7.org/fhir/extensions/StructureDefinition-structuredefinition-compliesWithProfile.html) in that it applies all constraints from the imposed profiles(s)
-   - Used when a profile needs to inherit all rules of another profile without direct derivation
-
+   - Ensures conformance to another profile by applying constraints from the imposed profile.
+   - More restrictive than [StructureDefinition Complies With Profile](https://hl7.org/fhir/extensions/StructureDefinition-structuredefinition-compliesWithProfile.html), as it inherits all rules of the imposed profile.
+   - Ensures a profile applies all constraints from another profile without being directly derived.
 
 The table shows different profiling approaches for creating AU PS profiles. The table includes:
 - the profile if and title, hyperlinked to the profile definition
