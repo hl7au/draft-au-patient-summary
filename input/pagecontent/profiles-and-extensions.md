@@ -18,22 +18,19 @@ FHIR provides two key mechanisms for ensuring compliance across different specif
    - More restrictive than [StructureDefinition Complies With Profile](https://hl7.org/fhir/extensions/StructureDefinition-structuredefinition-compliesWithProfile.html), as it inherits all rules of the imposed profile.
    - Ensures a profile applies all constraints from another profile without being directly derived.
 
-The table shows different profiling approaches for creating AU PS profiles. The table includes:
-- the profile if and title, hyperlinked to the profile definition
-- profile approach description that explains how the profile is derived and how it enforces AU Core and IPS constraints
-- test scenarios, showing if the profile complies with AU Core, IPS, or both
-- example instances used for testing
+#### Testing approaches
+The table shows different profiling approaches for AU PS profiles. The table includes:
+- Profile if and title- hyperlinked to the profile definition
+- Profiling approach description - explains how the profile is derived and how it enforces AU Core and IPS constraints
+- Test scenarios - indicates if the profile complies with AU Core, IPS, or both
+- Example instances used for testing
 
-Example conventions used for testing
-- the profile id, title and example instance include a suffix (e.g. -a)
-- the only difference between instances is in the meta.profile
-- the test results are visible in [qa.html](qa.html)
-- example instances use single meta.profile declaration
-  - declaring conformance to multiple AU PS had problems:
-    - when validation passes, it is clear that the instance conforms to all profiles states in meta.profile
-    - when validation fail, it is unclear which specific format it failed against
-    - to ensure clarity, we declare conformance to a single profile per test scenario 
-
+Conventions used in testing: 
+- Profile id, name, title and example instances include a suffix (e.g., -a) which identifies the specific profiling approach used
+- Example instances used to test a profile carry the same suffix as the profile itself
+  - The only variation between instances is in `meta.profile`, which declares compliance with the profile that has the same suffix.
+- Each profile has a set of instances (01, 02, etc) to test different scenarios while maintaining the same profile suffix.
+- Each example instance declares conformance to only one profile in `meta.profile` to make validation results clear. In [qa.html](qa.html), if an instance passes, it does so whether `meta.profile` has one or multiple profiles. However, if it fails, qa.html does not show which profile the instance failed against. To avoid this issue, we test one profile at a time.
 
 <table border="1" cellspacing="0" cellpadding="0" width="100%">
     <thead>
