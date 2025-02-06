@@ -46,7 +46,7 @@ Conventions used in testing:
   <tr>
     <td rowspan="9">au-ps-medicationrequest-a</td>
     <td rowspan="9"><a href="StructureDefinition-au-ps-medicationrequest-a.html">AU PS MedicationRequest A</a></td>
-    <td rowspan="9">Derive from AU Base, apply AU Core and IPS constraints, and state compliesWith AU Core and IPS.</td>
+    <td rowspan="9">Derive from AU Base, apply AU Core and IPS constraints, and state compliesWith AU Core and IPS. In this case the references to profiles are pointed to AU PS profiles where they exist.</td>
     <td rowspan="3">Compliant with IPS and AU Core</td>
     <td><a href="MedicationRequest-simvastatin-a-01.html">simvastatin-a-01</a></td>
   </tr>
@@ -79,7 +79,7 @@ Conventions used in testing:
   <tr>
     <td rowspan="9">au-ps-medicationrequest-b</td>
     <td rowspan="9"><a href="StructureDefinition-au-ps-medicationrequest-b.html">AU PS MedicationRequest B</a></td>
-    <td rowspan="9">Derive from AU Core, reapply AU Core constraints, apply IPS constraints, and state compliesWith IPS.</td>
+    <td rowspan="9">Derive from AU Core, reapply AU Core constraints, apply IPS constraints, and state compliesWith IPS. In this case the references to profiles are pointed to AU PS profiles where they exist.</td>
     <td rowspan="3">Compliant with IPS and AU Core</td>
     <td><a href="MedicationRequest-simvastatin-01-b.html">simvastatin-01-b</a></td>
   </tr>
@@ -112,7 +112,7 @@ Conventions used in testing:
   <tr>
     <td rowspan="9">au-ps-medicationrequest-c</td>
     <td rowspan="9"><a href="StructureDefinition-au-ps-medicationrequest-c.html">AU PS MedicationRequest C</a></td>
-    <td rowspan="9">Derive from AU Core, apply IPS constraints, and state compliesWith IPS.</td>
+    <td rowspan="9">Derive from AU Core, apply IPS constraints, and state compliesWith IPS. In this </td>
     <td rowspan="3">Compliant with IPS and AU Core</td>
     <td><a href="MedicationRequest-simvastatin-01-c.html">simvastatin-01-c</a></td>
   </tr>
@@ -178,7 +178,7 @@ Conventions used in testing:
   <tr>
     <td rowspan="9">au-ps-medicationrequest-e</td>
     <td rowspan="9"><a href="StructureDefinition-au-ps-medicationrequest-e.html">AU PS MedicationRequest E</a></td>
-    <td rowspan="9">Derived from IPS and constrained with AU Core rules where possible, without modifying IPS defined references, as changing references to different profiles is not allowed by the IG Publisher.</td>
+    <td rowspan="9">Derived from IPS and constrained with AU Core rules where possible. This is not complete yet as we would want to modify the references to IPS profiles to be AU PS profiles but that is currently failing in IG Publisher tooling.</td>
     <td rowspan="3">Compliant with IPS and AU Core</td>
     <td><a href="MedicationRequest-simvastatin-01-e.html">simvastatin-01-e</a></td>
   </tr>

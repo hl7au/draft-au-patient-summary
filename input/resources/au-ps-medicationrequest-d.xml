@@ -141,14 +141,14 @@
             <min value="0"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-medication"/>
+                <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medication"/>
             </type>
         </element>
         <element id="MedicationRequest.subject">
            <path value="MedicationRequest.subject"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-patient"/>
+                <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-patient"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -185,10 +185,10 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-practitioner"/>
-                <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-practitionerrole"/>
-                <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-organization"/>
-                <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-patient"/>
+                <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-practitioner"/>
+                <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-practitionerrole"/>
+                <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-organization"/>
+                <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-patient"/>
                 <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-relatedperson"/>
             </type>
             <mustSupport value="true"/>
@@ -205,7 +205,7 @@
             <path value="MedicationRequest.reasonReference"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-condition" />
+                <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-condition" />
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
             </type>
             <mustSupport value="true"/>
