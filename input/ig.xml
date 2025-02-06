@@ -110,6 +110,12 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/au-ps-medicationrequest-i"/>
+			</reference>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/au-ps-condition"/>
 			</reference>
 			<exampleBoolean value="false"/>
@@ -241,6 +247,27 @@
 			<exampleCanonical value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-medication"/>
 		</resource>
 		<!--MEDICATIONREQUEST EXAMPLES-->
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/reaptan-01-aucore"/>
+			</reference>
+			<name value="MedicationRequest - active prescription, Reaptan (AU Core)"/>
+			<description value="The control example for AU Core compliance."/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/reaptan-01-aucoreips"/>
+			</reference>
+			<name value="MedicationRequest - active prescription, Reaptan (AU Core and IPS compliant)"/>
+			<description value="The control example for AU Core and IPS compliance."/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/reaptan-01-ips"/>
+			</reference>
+			<name value="MedicationRequest - active prescription, Reaptan (IPS compliant)"/>
+			<description value="The control example for IPS compliance."/>
+		</resource>
 		<resource>
 			<reference>
 				<reference value="MedicationRequest/paracetamol-codeine-01-a"/>
