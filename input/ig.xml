@@ -64,6 +64,12 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/au-ps-medication"/>
+			</reference>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/au-ps-medicationrequest-a"/>
 			</reference>
 			<exampleBoolean value="false"/>
