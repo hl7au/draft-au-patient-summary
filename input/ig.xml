@@ -333,6 +333,27 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="MedicationRequest/simvastatin-03-aucore"/>
+			</reference>
+			<name value="MedicationRequest - active prescription, Simvastatin (IPS compliant but not AU Core compliant) with meta.profile=AU Core and IPS"/>
+			<description value="Adjusted from AU Core example of an order for Simvastatin for high cholesterol that demonstrates representing medication as a reference to Medication resource. Patient: Deangelo HOWE."/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/simvastatin-03-aucoreips"/>
+			</reference>
+			<name value="MedicationRequest - active prescription, Simvastatin (IPS compliant but not AU Core compliant) with meta.profile=AU Core"/>
+			<description value="Adjusted from AU Core example of an order for Simvastatin for high cholesterol that demonstrates representing medication as a reference to Medication resource. Patient: Deangelo HOWE."/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/simvastatin-03-ips"/>
+			</reference>
+			<name value="MedicationRequest - active prescription, Simvastatin (IPS compliant but not AU Core compliant) with meta.profile=IPS compliant"/>
+			<description value="Adjusted from AU Core example of an order for Simvastatin for high cholesterol that demonstrates representing medication as a reference to Medication resource. Patient: Deangelo HOWE."/>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="MedicationRequest/paracetamol-codeine-01-aucoreips"/>
 			</reference>
 			<name value="MedicationRequest - prescription, paracetamol-codeine with meta.profile=AU Core and IPS"/>
@@ -377,21 +398,21 @@
 			<reference>
 				<reference value="MedicationRequest/paracetamol-codeine-03-aucoreips"/>
 			</reference>
-			<name value="MedicationRequest - prescription, paracetamol-codeine (IPScompliant but not AU Core compliant) with meta.profile=AU Core and IPS"/>
+			<name value="MedicationRequest - prescription, paracetamol-codeine (IPS compliant but not AU Core compliant) with meta.profile=AU Core and IPS"/>
 			<description value="The control example for AU Core and IPS compliance."/>
 		</resource>
 		<resource>
 			<reference>
 				<reference value="MedicationRequest/paracetamol-codeine-03-ips"/>
 			</reference>
-			<name value="MedicationRequest - prescription, paracetamol-codeine (IPScompliant but not AU Core compliant) with meta.profile=IPS"/>
+			<name value="MedicationRequest - prescription, paracetamol-codeine (IPS compliant but not AU Core compliant) with meta.profile=IPS"/>
 			<description value="The control example for IPS compliance."/>
 		</resource>
 		<resource>
 			<reference>
 				<reference value="MedicationRequest/paracetamol-codeine-03-aucore"/>
 			</reference>
-			<name value="MedicationRequest - prescription, paracetamol-codeine (IPScompliant but not AU Core compliant) with meta.profile=AU Core "/>
+			<name value="MedicationRequest - prescription, paracetamol-codeine (IPS compliant but not AU Core compliant) with meta.profile=AU Core "/>
 			<description value="The control example for AU Core compliance."/>
 		</resource>
 		<resource>
@@ -414,7 +435,7 @@
 			<reference>
 				<reference value="MedicationRequest/paracetamol-codeine-03-a"/>
 			</reference>
-			<name value="MedicationRequest - prescription, paracetamol-codeine (IPScompliant but not AU Core compliant)"/>
+			<name value="MedicationRequest - prescription, paracetamol-codeine (IPS compliant but not AU Core compliant)"/>
 			<description value="Adjusted from AU Core example of an order for paracetamol 500 mg + codeine phosphate hemihydrate 30 mg tablet illustrating missing data for status and requester. Patient:  Mrs. Anne Bennelong."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-a"/>
 		</resource>
@@ -438,7 +459,7 @@
 			<reference>
 				<reference value="MedicationRequest/paracetamol-codeine-03-b"/>
 			</reference>
-			<name value="MedicationRequest - prescription, paracetamol-codeine (IPScompliant but not AU Core compliant)"/>
+			<name value="MedicationRequest - prescription, paracetamol-codeine (IPS compliant but not AU Core compliant)"/>
 			<description value="Adjusted from AU Core example of an order for paracetamol 500 mg + codeine phosphate hemihydrate 30 mg tablet illustrating missing data for status and requester. Patient:  Mrs. Anne Bennelong."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-b"/>
 		</resource>
@@ -462,7 +483,7 @@
 			<reference>
 				<reference value="MedicationRequest/paracetamol-codeine-03-c"/>
 			</reference>
-			<name value="MedicationRequest - prescription, paracetamol-codeine (IPScompliant but not AU Core compliant)"/>
+			<name value="MedicationRequest - prescription, paracetamol-codeine (IPS compliant but not AU Core compliant)"/>
 			<description value="Adjusted from AU Core example of an order for paracetamol 500 mg + codeine phosphate hemihydrate 30 mg tablet illustrating missing data for status and requester. Patient:  Mrs. Anne Bennelong."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-c"/>
 		</resource>
@@ -486,7 +507,7 @@
 			<reference>
 				<reference value="MedicationRequest/paracetamol-codeine-03-d"/>
 			</reference>
-			<name value="MedicationRequest - prescription, paracetamol-codeine (IPScompliant but not AU Core compliant)"/>
+			<name value="MedicationRequest - prescription, paracetamol-codeine (IPS compliant but not AU Core compliant)"/>
 			<description value="Adjusted from AU Core example of an order for paracetamol 500 mg + codeine phosphate hemihydrate 30 mg tablet illustrating missing data for status and requester. Patient:  Mrs. Anne Bennelong."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-d"/>
 		</resource>
@@ -510,7 +531,7 @@
 			<reference>
 				<reference value="MedicationRequest/paracetamol-codeine-03-e"/>
 			</reference>
-			<name value="MedicationRequest - prescription, paracetamol-codeine (IPScompliant but not AU Core compliant)"/>
+			<name value="MedicationRequest - prescription, paracetamol-codeine (IPS compliant but not AU Core compliant)"/>
 			<description value="Adjusted from AU Core example of an order for paracetamol 500 mg + codeine phosphate hemihydrate 30 mg tablet illustrating missing data for status and requester. Patient:  Mrs. Anne Bennelong."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-e"/>
 		</resource>
@@ -534,7 +555,7 @@
 			<reference>
 				<reference value="MedicationRequest/paracetamol-codeine-03-f"/>
 			</reference>
-			<name value="MedicationRequest - prescription, paracetamol-codeine (IPScompliant but not AU Core compliant)"/>
+			<name value="MedicationRequest - prescription, paracetamol-codeine (IPS compliant but not AU Core compliant)"/>
 			<description value="Adjusted from AU Core example of an order for paracetamol 500 mg + codeine phosphate hemihydrate 30 mg tablet illustrating missing data for status and requester. Patient:  Mrs. Anne Bennelong."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-f"/>
 		</resource>
@@ -558,7 +579,7 @@
 			<reference>
 				<reference value="MedicationRequest/paracetamol-codeine-03-g"/>
 			</reference>
-			<name value="MedicationRequest - prescription, paracetamol-codeine (IPScompliant but not AU Core compliant)"/>
+			<name value="MedicationRequest - prescription, paracetamol-codeine (IPS compliant but not AU Core compliant)"/>
 			<description value="Adjusted from AU Core example of an order for paracetamol 500 mg + codeine phosphate hemihydrate 30 mg tablet illustrating missing data for status and requester. Patient:  Mrs. Anne Bennelong."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-g"/>
 		</resource>
@@ -582,7 +603,7 @@
 			<reference>
 				<reference value="MedicationRequest/paracetamol-codeine-03-h"/>
 			</reference>
-			<name value="MedicationRequest - prescription, paracetamol-codeine (IPScompliant but not AU Core compliant)"/>
+			<name value="MedicationRequest - prescription, paracetamol-codeine (IPS compliant but not AU Core compliant)"/>
 			<description value="Adjusted from AU Core example of an order for paracetamol 500 mg + codeine phosphate hemihydrate 30 mg tablet illustrating missing data for status and requester. Patient:  Mrs. Anne Bennelong."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-h"/>
 		</resource>
@@ -606,7 +627,7 @@
 			<reference>
 				<reference value="MedicationRequest/paracetamol-codeine-03-i"/>
 			</reference>
-			<name value="MedicationRequest - prescription, paracetamol-codeine (IPScompliant but not AU Core compliant)"/>
+			<name value="MedicationRequest - prescription, paracetamol-codeine (IPS compliant but not AU Core compliant)"/>
 			<description value="Adjusted from AU Core example of an order for paracetamol 500 mg + codeine phosphate hemihydrate 30 mg tablet illustrating missing data for status and requester. Patient:  Mrs. Anne Bennelong."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-i"/>
 		</resource>
@@ -630,7 +651,7 @@
 			<reference>
 				<reference value="MedicationRequest/reaptan-03-a"/>
 			</reference>
-			<name value="MedicationRequest - active prescription, Reaptan (IPScompliant but not AU Core compliant)"/>
+			<name value="MedicationRequest - active prescription, Reaptan (IPS compliant but not AU Core compliant)"/>
 			<description value="Adjusted from AU Core example Reaptan for pain management that demonstrates representing medication as a contained Medication resource. Patient: Deangelo HOWE."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-a"/>
 		</resource>
@@ -654,7 +675,7 @@
 			<reference>
 				<reference value="MedicationRequest/reaptan-03-b"/>
 			</reference>
-			<name value="MedicationRequest - active prescription, Reaptan (IPScompliant but not AU Core compliant)"/>
+			<name value="MedicationRequest - active prescription, Reaptan (IPS compliant but not AU Core compliant)"/>
 			<description value="Adjusted from AU Core example Reaptan for pain management that demonstrates representing medication as a contained Medication resource. Patient: Deangelo HOWE."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-b"/>
 		</resource>
@@ -678,7 +699,7 @@
 			<reference>
 				<reference value="MedicationRequest/reaptan-03-c"/>
 			</reference>
-			<name value="MedicationRequest - active prescription, Reaptan (IPScompliant but not AU Core compliant)"/>
+			<name value="MedicationRequest - active prescription, Reaptan (IPS compliant but not AU Core compliant)"/>
 			<description value="Adjusted from AU Core example Reaptan for pain management that demonstrates representing medication as a contained Medication resource. Patient: Deangelo HOWE."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-c"/>
 		</resource>
@@ -702,7 +723,7 @@
 			<reference>
 				<reference value="MedicationRequest/reaptan-03-d"/>
 			</reference>
-			<name value="MedicationRequest - active prescription, Reaptan (IPScompliant but not AU Core compliant)"/>
+			<name value="MedicationRequest - active prescription, Reaptan (IPS compliant but not AU Core compliant)"/>
 			<description value="Adjusted from AU Core example Reaptan for pain management that demonstrates representing medication as a contained Medication resource. Patient: Deangelo HOWE."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-d"/>
 		</resource>
@@ -726,7 +747,7 @@
 			<reference>
 				<reference value="MedicationRequest/reaptan-03-e"/>
 			</reference>
-			<name value="MedicationRequest - active prescription, Reaptan (IPScompliant but not AU Core compliant)"/>
+			<name value="MedicationRequest - active prescription, Reaptan (IPS compliant but not AU Core compliant)"/>
 			<description value="Adjusted from AU Core example Reaptan for pain management that demonstrates representing medication as a contained Medication resource. Patient: Deangelo HOWE."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-e"/>
 		</resource>
@@ -750,7 +771,7 @@
 			<reference>
 				<reference value="MedicationRequest/reaptan-03-f"/>
 			</reference>
-			<name value="MedicationRequest - active prescription, Reaptan (IPScompliant but not AU Core compliant)"/>
+			<name value="MedicationRequest - active prescription, Reaptan (IPS compliant but not AU Core compliant)"/>
 			<description value="Adjusted from AU Core example Reaptan for pain management that demonstrates representing medication as a contained Medication resource. Patient: Deangelo HOWE."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-f"/>
 		</resource>
@@ -774,7 +795,7 @@
 			<reference>
 				<reference value="MedicationRequest/reaptan-03-g"/>
 			</reference>
-			<name value="MedicationRequest - active prescription, Reaptan (IPScompliant but not AU Core compliant)"/>
+			<name value="MedicationRequest - active prescription, Reaptan (IPS compliant but not AU Core compliant)"/>
 			<description value="Adjusted from AU Core example Reaptan for pain management that demonstrates representing medication as a contained Medication resource. Patient: Deangelo HOWE."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-g"/>
 		</resource>
@@ -798,7 +819,7 @@
 			<reference>
 				<reference value="MedicationRequest/reaptan-03-h"/>
 			</reference>
-			<name value="MedicationRequest - active prescription, Reaptan (IPScompliant but not AU Core compliant)"/>
+			<name value="MedicationRequest - active prescription, Reaptan (IPS compliant but not AU Core compliant)"/>
 			<description value="Adjusted from AU Core example Reaptan for pain management that demonstrates representing medication as a contained Medication resource. Patient: Deangelo HOWE."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-h"/>
 		</resource>
@@ -822,7 +843,7 @@
 			<reference>
 				<reference value="MedicationRequest/reaptan-03-i"/>
 			</reference>
-			<name value="MedicationRequest - active prescription, Reaptan (IPScompliant but not AU Core compliant)"/>
+			<name value="MedicationRequest - active prescription, Reaptan (IPS compliant but not AU Core compliant)"/>
 			<description value="Adjusted from AU Core example Reaptan for pain management that demonstrates representing medication as a contained Medication resource. Patient: Deangelo HOWE."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-i"/>
 		</resource>
@@ -846,7 +867,7 @@
 			<reference>
 				<reference value="MedicationRequest/simvastatin-03-a"/>
 			</reference>
-			<name value="MedicationRequest - active prescription, Simvastatin  (IPScompliant but not AU Core compliant)"/>
+			<name value="MedicationRequest - active prescription, Simvastatin  (IPS compliant but not AU Core compliant)"/>
 			<description value="Adjusted from AU Core example of an order for Simvastatin for high cholesterol that demonstrates representing medication as a reference to Medication resource. Patient: Deangelo HOWE."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-a"/>
 		</resource>
@@ -870,7 +891,7 @@
 			<reference>
 				<reference value="MedicationRequest/simvastatin-03-b"/>
 			</reference>
-			<name value="MedicationRequest - active prescription, Simvastatin (IPScompliant but not AU Core compliant)"/>
+			<name value="MedicationRequest - active prescription, Simvastatin (IPS compliant but not AU Core compliant)"/>
 			<description value="Adjusted from AU Core example of an order for Simvastatin for high cholesterol that demonstrates representing medication as a reference to Medication resource. Patient: Deangelo HOWE."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-b"/>
 		</resource>		
@@ -894,7 +915,7 @@
 			<reference>
 				<reference value="MedicationRequest/simvastatin-03-c"/>
 			</reference>
-			<name value="MedicationRequest - active prescription, Simvastatin  (IPScompliant but not AU Core compliant)"/>
+			<name value="MedicationRequest - active prescription, Simvastatin  (IPS compliant but not AU Core compliant)"/>
 			<description value="Adjusted from AU Core example of an order for Simvastatin for high cholesterol that demonstrates representing medication as a reference to Medication resource. Patient: Deangelo HOWE."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-c"/>
 		</resource>
@@ -918,7 +939,7 @@
 			<reference>
 				<reference value="MedicationRequest/simvastatin-03-d"/>
 			</reference>
-			<name value="MedicationRequest - active prescription, Simvastatin  (IPScompliant but not AU Core compliant)"/>
+			<name value="MedicationRequest - active prescription, Simvastatin  (IPS compliant but not AU Core compliant)"/>
 			<description value="Adjusted from AU Core example of an order for Simvastatin for high cholesterol that demonstrates representing medication as a reference to Medication resource. Patient: Deangelo HOWE."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-d"/>
 		</resource>
@@ -942,7 +963,7 @@
 			<reference>
 				<reference value="MedicationRequest/simvastatin-03-e"/>
 			</reference>
-			<name value="MedicationRequest - active prescription, Simvastatin (IPScompliant but not AU Core compliant)"/>
+			<name value="MedicationRequest - active prescription, Simvastatin (IPS compliant but not AU Core compliant)"/>
 			<description value="Adjusted from AU Core example of an order for Simvastatin for high cholesterol that demonstrates representing medication as a reference to Medication resource. Patient: Deangelo HOWE."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-e"/>
 		</resource>
@@ -966,7 +987,7 @@
 			<reference>
 				<reference value="MedicationRequest/simvastatin-03-f"/>
 			</reference>
-			<name value="MedicationRequest - active prescription, Simvastatin (IPScompliant but not AU Core compliant)"/>
+			<name value="MedicationRequest - active prescription, Simvastatin (IPS compliant but not AU Core compliant)"/>
 			<description value="Adjusted from AU Core example of an order for Simvastatin for high cholesterol that demonstrates representing medication as a reference to Medication resource. Patient: Deangelo HOWE."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-f"/>
 		</resource>
@@ -990,7 +1011,7 @@
 			<reference>
 				<reference value="MedicationRequest/simvastatin-03-g"/>
 			</reference>
-			<name value="MedicationRequest - active prescription, Simvastatin (IPScompliant but not AU Core compliant)"/>
+			<name value="MedicationRequest - active prescription, Simvastatin (IPS compliant but not AU Core compliant)"/>
 			<description value="Adjusted from AU Core example of an order for Simvastatin for high cholesterol that demonstrates representing medication as a reference to Medication resource. Patient: Deangelo HOWE."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-g"/>
 		</resource>
@@ -1014,7 +1035,7 @@
 			<reference>
 				<reference value="MedicationRequest/simvastatin-03-h"/>
 			</reference>
-			<name value="MedicationRequest - active prescription, Simvastatin (IPScompliant but not AU Core compliant)"/>
+			<name value="MedicationRequest - active prescription, Simvastatin (IPS compliant but not AU Core compliant)"/>
 			<description value="Adjusted from AU Core example of an order for Simvastatin for high cholesterol that demonstrates representing medication as a reference to Medication resource. Patient: Deangelo HOWE."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-h"/>
 		</resource>
@@ -1038,7 +1059,7 @@
 			<reference>
 				<reference value="MedicationRequest/simvastatin-03-i"/>
 			</reference>
-			<name value="MedicationRequest - active prescription, Simvastatin (IPScompliant but not AU Core compliant)"/>
+			<name value="MedicationRequest - active prescription, Simvastatin (IPS compliant but not AU Core compliant)"/>
 			<description value="Adjusted from AU Core example of an order for Simvastatin for high cholesterol that demonstrates representing medication as a reference to Medication resource. Patient: Deangelo HOWE."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-i"/>
 		</resource>
