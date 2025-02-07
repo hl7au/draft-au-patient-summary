@@ -256,6 +256,41 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="MedicationRequest/reaptan-01-aucoreips"/>
+			</reference>
+			<name value="MedicationRequest - active prescription, Reaptan with meta.profile=AU Core and IPS"/>
+			<description value="The control example for AU Core and IPS compliance."/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/reaptan-01-ips"/>
+			</reference>
+			<name value="MedicationRequest - active prescription, Reaptan with meta.profile=IPS compliant"/>
+			<description value="The control example for IPS compliance."/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/reaptan-02-aucore"/>
+			</reference>
+			<name value="MedicationRequest - active prescription, Reaptan (AU Core compliant but not IPS compliant) with meta.profile=AU Core"/>
+			<description value="The control example for AU Core compliance."/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/reaptan-02-aucoreips"/>
+			</reference>
+			<name value="MedicationRequest - active prescription, Reaptan (AU Core compliant but not IPS compliant) with meta.profile=AU Core and IPS"/>
+			<description value="The control example for AU Core and IPS compliance."/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/reaptan-02-ips"/>
+			</reference>
+			<name value="MedicationRequest - active prescription, Reaptan (AU Core compliant but not IPS compliant) with meta.profile=IPS compliant"/>
+			<description value="The control example for IPS compliance."/>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="MedicationRequest/paracetamol-codeine-01-aucoreips"/>
 			</reference>
 			<name value="MedicationRequest - prescription, paracetamol-codeine with meta.profile=AU Core and IPS"/>
@@ -316,20 +351,6 @@
 			</reference>
 			<name value="MedicationRequest - prescription, paracetamol-codeine (IPScompliant but not AU Core compliant) with meta.profile=AU Core "/>
 			<description value="The control example for AU Core compliance."/>
-		</resource>
-		<resource>
-			<reference>
-				<reference value="MedicationRequest/reaptan-01-aucoreips"/>
-			</reference>
-			<name value="MedicationRequest - active prescription, Reaptan with meta.profile=AU Core and IPS"/>
-			<description value="The control example for AU Core and IPS compliance."/>
-		</resource>
-		<resource>
-			<reference>
-				<reference value="MedicationRequest/reaptan-01-ips"/>
-			</reference>
-			<name value="MedicationRequest - active prescription, Reaptan with meta.profile=IPS compliant"/>
-			<description value="The control example for IPS compliance."/>
 		</resource>
 		<resource>
 			<reference>
