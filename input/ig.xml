@@ -291,6 +291,48 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="MedicationRequest/simvastatin-01-aucore"/>
+			</reference>
+			<name value="MedicationRequest - active prescription, Simvastatin (AU Core and IPS compliant) with meta.profile=AU Core and IPS"/>
+			<description value="Adjusted from AU Core example of an order for Simvastatin for high cholesterol that demonstrates representing medication as a reference to Medication resource. Patient: Deangelo HOWE."/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/simvastatin-01-aucoreips"/>
+			</reference>
+			<name value="MedicationRequest - active prescription, Simvastatin (AU Core and IPS compliant) with meta.profile=AU Core"/>
+			<description value="Adjusted from AU Core example of an order for Simvastatin for high cholesterol that demonstrates representing medication as a reference to Medication resource. Patient: Deangelo HOWE."/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/simvastatin-01-ips"/>
+			</reference>
+			<name value="MedicationRequest - active prescription, Simvastatin (AU Core and IPS compliant) with meta.profile=IPS compliant"/>
+			<description value="Adjusted from AU Core example of an order for Simvastatin for high cholesterol that demonstrates representing medication as a reference to Medication resource. Patient: Deangelo HOWE."/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/simvastatin-02-aucore"/>
+			</reference>
+			<name value="MedicationRequest - active prescription, Simvastatin (AU Core compliant but not IPS compliant) with meta.profile=AU Core and IPS"/>
+			<description value="Adjusted from AU Core example of an order for Simvastatin for high cholesterol that demonstrates representing medication as a reference to Medication resource. Patient: Deangelo HOWE."/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/simvastatin-02-aucoreips"/>
+			</reference>
+			<name value="MedicationRequest - active prescription, Simvastatin (AU Core compliant but not IPS compliant) with meta.profile=AU Core"/>
+			<description value="Adjusted from AU Core example of an order for Simvastatin for high cholesterol that demonstrates representing medication as a reference to Medication resource. Patient: Deangelo HOWE."/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/simvastatin-02-ips"/>
+			</reference>
+			<name value="MedicationRequest - active prescription, Simvastatin (AU Core compliant but not IPS compliant) with meta.profile=IPS compliant"/>
+			<description value="Adjusted from AU Core example of an order for Simvastatin for high cholesterol that demonstrates representing medication as a reference to Medication resource. Patient: Deangelo HOWE."/>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="MedicationRequest/paracetamol-codeine-01-aucoreips"/>
 			</reference>
 			<name value="MedicationRequest - prescription, paracetamol-codeine with meta.profile=AU Core and IPS"/>
