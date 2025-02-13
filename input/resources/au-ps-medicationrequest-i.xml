@@ -12,8 +12,8 @@
   </extension>
   <url value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-i"/>
   <version value="0.1.0"/>
-  <name value="AUPSMedicationRequestI"/>
-  <title value="AU PS MedicationRequest I"/>
+  <name value="EXPERIMENTALAUPSMedicationRequestApproachI"/>
+  <title value="EXPERIMENTAL AU PS MedicationRequest Approach I"/>
   <status value="draft"/>
   <experimental value="true"/>
   <description value="This profile is based on the FHIR resource, and states complies with AU Core and IPS but does not include directly in the profile any rules to make this true - this is a negative case, that shows behaviour when a 'false' complies with is stated."/>

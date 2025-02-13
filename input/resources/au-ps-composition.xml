@@ -6,8 +6,8 @@
 	</extension>
 	<url value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-composition"/>
 	<version value="0.1.0"/>
-	<name value="AUPSComposition"/>
-	<title value="AU PS Composition"/>
+	<name value="EXPERIMENTALAUPSComposition"/>
+	<title value="EXPERIMENTAL AU PS Composition"/>
 	<status value="draft"/>
 	<experimental value="true"/>
 	<description value="TBD: Clinical document used to represent the International Patient Summary (IPS) data set. &#xD;&#xA;An International Patient Summary (IPS) document is an electronic health record extract containing essential healthcare information about a subject of care. &#xD;&#xA;The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-independent; but still clinically relevant. As specified in EN 17269 and ISO 27269, it is designed for supporting the use case scenario for ‘unplanned, cross border care’, but it is not limited to it. It is intended to be international, i.e., to provide generic solutions for global application beyond a particular region or country.&#xD;&#xA;&#xD;&#xA;This profile is based on the ClinicalDocument profile."/>

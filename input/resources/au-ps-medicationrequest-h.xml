@@ -12,8 +12,8 @@
   </extension>
   <url value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-h"/>
   <version value="0.1.0"/>
-  <name value="AUPSMedicationRequestH"/>
-  <title value="AU PS MedicationRequest H"/>
+  <name value="EXPERIMENTALAUPSMedicationRequestApproachH"/>
+  <title value="EXPERIMENTALAU PS MedicationRequest Approach H"/>
   <status value="draft"/>
   <experimental value="true"/>
   <description value="This profile is based on the AU Core profile, with IPS rules added as well (by reference to the IPS profile)."/>
