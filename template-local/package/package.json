@@ -1,0 +1,13 @@
+{
+  "name" : "hl7.au.draft.template",
+  "type" : "fhir.template",
+  "license" : "CC0-1.0",
+  "description" : "FHIR implementation draft only guides",
+  "author" : "http://hl7.org.au/fhir",
+  "canonical" : "http://fhir.org/templates/hl7.au.draft.template",
+  "base" : "hl7.au.fhir.template",
+  "dependencies" : {
+    "hl7.au.fhir.template" : "current"
+  },
+  "version" : "0.0.1"
+}
