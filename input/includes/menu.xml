@@ -13,6 +13,9 @@
       </li>
     </ul>
   </li> -->
+  <li>
+    <a href="approach.html">Approach</a>
+  </li>
 <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artefacts
       <b class="caret"></b>
@@ -54,7 +57,4 @@
       </li>
     </ul>
   </li>
-  <!-- <li>
-    <a href="changes.html">Change Log</a>
-  </li>-->
 </ul>

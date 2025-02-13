@@ -1,3 +1,6 @@
+<div class="stu-note">
+This is IG is experimental and is authored for testing purposes. It is not intended to be used for genuine usage. See the <a href="https://build.fhir.org/ig/hl7au/au-fhir-ps/">AU Patient Summary Implementation Guide</a> for guidance on the generation of patient summaries in an Australian context.
+</div>
 
 ### Introduction
 This Implementation Guide is created as part of a tooling test to explore modelling options. It is not intended for further development or progression.
