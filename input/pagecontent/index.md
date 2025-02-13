@@ -3,9 +3,7 @@ This is IG is experimental and is authored for testing purposes. It is not inten
 </div>
 
 ### Introduction
-This Implementation Guide is created as part of a tooling test to explore modelling options. It is not intended for further development or progression.
-
-It shows different profiling approaches used to develop draft AU PS profiles, ensuring compliance with AU Core and IPS in alignment with the [Profile Design Principles for AU Patient Summary](https://confluence.hl7.org/display/HAFWG/Profile+Design+Principles+for+AU+Patient+Summary). The goal is to identify the most effective way to profile AU PS resources while maintaining conformance to national and international requirements.
+This Implementation Guide is created as part of a tooling test to explore modelling options. It shows different profiling approaches used to develop draft AU PS profiles, ensuring compliance with AU Core and IPS in alignment with the [Profile Design Principles for AU Patient Summary](https://confluence.hl7.org/display/HAFWG/Profile+Design+Principles+for+AU+Patient+Summary). The goal is to identify the most effective way to profile AU PS resources while maintaining conformance to national and international requirements.
 
 We are testing different profiling strategies to assess the impact on:  
 - how different derivation approaches align with AU Core and IPS
