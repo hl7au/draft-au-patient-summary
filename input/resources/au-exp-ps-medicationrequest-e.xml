@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="au-ps-medicationrequest-e"/>
+    <id value="au-exp-ps-medicationrequest-e"/>
     <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
         <valueInteger value="0"/>
     </extension>
-    <url value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-e"/>
+    <url value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-medicationrequest-e"/>
     <version value="0.1.0"/>
     <name value="EXPERIMENTALAUPSMedicationRequestApproachE"/>
     <title value="EXPERIMENTAL AU PS MedicationRequest Approach E"/>
@@ -157,7 +157,7 @@
                 <human value="Date shall be precise to the day or, if not available, the Data Absent Reason extension shall be present"/>
                 <expression value="$this.hasValue() implies (extension('http://hl7.org/fhir/StructureDefinition/data-absent-reason').value.exists().not() and $this.toString().length() >= 10)"/>
                 <xpath value="(f:authoredOn[string-length(.)>=10]) and not(exists(f:extension[@url='http://hl7.org/fhir/StructureDefinition/data-absent-reason'])))"/>
-                <source value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-e"/>
+                <source value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-medicationrequest-e"/>
             </constraint>
             <mustSupport value="true"/>
         </element>

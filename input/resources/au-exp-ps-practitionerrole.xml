@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="au-ps-practitionerrole"/>
+  <id value="au-exp-ps-practitionerrole"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="0"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile">
     <valueCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/PractitionerRole-uv-ips"/>
   </extension>
-  <url value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-practitionerrole"/>
+  <url value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-practitionerrole"/>
   <version value="0.1.0"/>
   <name value="EXPERIMENTALAUPSPractitionerRole"/>
   <title value="EXPERIMENTAL AU PS PractitionerRole"/>
@@ -25,14 +25,14 @@
       <path value="PractitionerRole.practitioner"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-practitioner"/>
+        <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-practitioner"/>
       </type>
     </element>
     <element id="PractitionerRole.organization">
       <path value="PractitionerRole.organization"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-organization"/>
+        <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-organization"/>
       </type>
     </element>
   </differential>

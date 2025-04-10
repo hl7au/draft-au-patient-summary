@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="au-ps-medicationrequest-i"/>
+  <id value="au-exp-ps-medicationrequest-i"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="0"/>
   </extension>
@@ -10,7 +10,7 @@
     <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile">
     <valueCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationRequest-uv-ips"/>
   </extension>
-  <url value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-i"/>
+  <url value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-medicationrequest-i"/>
   <version value="0.1.0"/>
   <name value="EXPERIMENTALAUPSMedicationRequestApproachI"/>
   <title value="EXPERIMENTAL AU PS MedicationRequest Approach I"/>

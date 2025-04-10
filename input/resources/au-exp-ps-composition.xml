@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-	<id value="au-ps-composition"/>
+	<id value="au-exp-ps-composition"/>
 	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
 		<valueInteger value="0"/>
 	</extension>
-	<url value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-composition"/>
+	<url value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-composition"/>
 	<version value="0.1.0"/>
 	<name value="EXPERIMENTALAUPSComposition"/>
 	<title value="EXPERIMENTAL AU PS Composition"/>
@@ -22,17 +22,17 @@
 			<path value="Composition.subject"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-patient"/>
+				<targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-patient"/>
 			</type>
 		</element>
 		<element id="Composition.author">
 			<path value="Composition.author"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-patient"/>
-				<targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-practitionerrole"/>
-				<!--<targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-system-device"/>
-				<targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-relatedperson"/>-->
+				<targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-patient"/>
+				<targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-practitionerrole"/>
+				<!--<targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-system-device"/>
+				<targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-relatedperson"/>-->
 			</type>
 		</element>
 		<element id="Composition.section">
@@ -82,7 +82,7 @@
 			<sliceName value="medicationRequest"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest"/>
+				<targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-medicationrequest"/>
 			</type>
 		</element>
 		<element id="Composition.section:sectionAllergies">
@@ -113,7 +113,7 @@
 			<sliceName value="allergyOrIntolerance"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-allergyintolerance"/>
+				<targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-allergyintolerance"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -145,7 +145,7 @@
 			<sliceName value="problem"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-condition"/>
+				<targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-condition"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -177,7 +177,7 @@
 			<sliceName value="procedure"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-procedure"/>
+				<targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-procedure"/>
 			</type>
 		</element>
 		<element id="Composition.section:sectionImmunizations">
@@ -208,7 +208,7 @@
 			<sliceName value="immunization"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-immunization"/>
+				<targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-immunization"/>
 			</type>
 		</element>
 		<element id="Composition.section:sectionMedicalDevices">
@@ -352,7 +352,7 @@
 			<sliceName value="pastProblem"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-condition"/>
+				<targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-condition"/>
 			</type>
 		</element>
 		<element id="Composition.section:sectionFunctionalStatus">
@@ -383,7 +383,7 @@
 			<sliceName value="disability"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-condition"/>
+				<targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-condition"/>
 			</type>
 		</element>
 		<element id="Composition.section:sectionFunctionalStatus.entry:functionalAssessment">
