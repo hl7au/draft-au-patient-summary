@@ -39,7 +39,7 @@
       <type>
         <code value="Reference"/>
         <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-condition"/>
-        <targetProfile value="http://hl7.org.draft/fhir/StructureDefinition/Observation"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
         <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-procedure"/>
       </type>
     </element>

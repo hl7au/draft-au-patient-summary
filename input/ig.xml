@@ -28,7 +28,7 @@
 	<dependsOn>
 		<uri value="http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips"/>
 		<packageId value="hl7.fhir.uv.ips"/>
-		<version value="2.0.0-ballot"/>
+		<version value="current"/>
 	</dependsOn>
 	<dependsOn>
 		<uri value="http://hl7.org.au/fhir/core/ImplementationGuide/hl7.fhir.au.core"/>
@@ -234,7 +234,7 @@
 				<reference value="Condition/aci"/>
 			</reference>
 			<name value="Condition - Acute myocardial infarction of anterior wall (AU Core and IPS compliant)"/>
-			<description value="Acute myocardial infarction of anterior wall. Patient: Deangelo Howe. "/>
+			<description value="Acute myocardial infarction of anterior wall. Patient: Deangelo Howe."/>
 			<exampleCanonical value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-condition"/>
 		</resource>
 		<!--IMMUNIZATION EXAMPLES-->
@@ -409,7 +409,7 @@
 			<reference>
 				<reference value="MedicationRequest/paracetamol-codeine-02-aucore"/>
 			</reference>
-			<name value="MedicationRequest - prescription, paracetamol-codeine (AU Core compliant but not IPS compliant) with meta.profile=AU Core "/>
+			<name value="MedicationRequest - prescription, paracetamol-codeine (AU Core compliant but not IPS compliant) with meta.profile=AU Core"/>
 			<description value="The control example for AU Core compliance."/>
 		</resource>
 		<resource>
@@ -430,7 +430,7 @@
 			<reference>
 				<reference value="MedicationRequest/paracetamol-codeine-03-aucore"/>
 			</reference>
-			<name value="MedicationRequest - prescription, paracetamol-codeine (IPS compliant but not AU Core compliant) with meta.profile=AU Core "/>
+			<name value="MedicationRequest - prescription, paracetamol-codeine (IPS compliant but not AU Core compliant) with meta.profile=AU Core"/>
 			<description value="The control example for AU Core compliance."/>
 		</resource>
 		<resource>
