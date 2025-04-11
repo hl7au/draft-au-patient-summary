@@ -38,6 +38,12 @@
 	<definition>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/au-exp-ps-bundle"/>
+			</reference>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/au-exp-ps-composition"/>
 			</reference>
 			<exampleBoolean value="false"/>
