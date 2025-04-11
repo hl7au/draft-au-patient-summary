@@ -56,7 +56,19 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/au-exp-ps-encounter"/>
+			</reference>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/au-exp-ps-medication"/>
+			</reference>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/au-exp-ps-medicationrequest"/>
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>
@@ -147,6 +159,12 @@
 		<resource>
 			<reference>
 				<reference value="StructureDefinition/au-exp-ps-procedure"/>
+			</reference>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/au-exp-ps-relatedperson"/>
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>
