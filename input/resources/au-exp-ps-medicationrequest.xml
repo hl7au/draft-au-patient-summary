@@ -33,7 +33,7 @@
                 <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-organization"/>
                 <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-patient"/>
                 <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-relatedperson"/>
-                <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-device-observer"/>
+                <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Device-observer-uv-ips"/>
             </type>
         </element>
         <element id="MedicationRequest.reasonReference">
