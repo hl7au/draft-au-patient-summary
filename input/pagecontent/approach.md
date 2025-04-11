@@ -136,7 +136,7 @@ Conventions used in testing:
   </thead>
 <tbody>
   <tr>
-    <td rowspan="9"><a href="StructureDefinition-au-ps-medicationrequest-a.html">EXPERIMENTAL AU PS MedicationRequest Approach A</a></td>
+    <td rowspan="9"><a href="StructureDefinition-au-exp-ps-medicationrequest-a.html">EXPERIMENTAL AU PS MedicationRequest Approach A</a></td>
     <td rowspan="9">Approach A: <ul><li>Derive from AU Base</li><li>Apply AU Core</li><li>Apply IPS constraints</li><li>State compliesWith AU Core and IPS</li></ul> In this case the references to profiles are pointed to AU PS profiles where they exist.</td>
     <td rowspan="3">Validate examples compliant with IPS and AU Core</td>
     <td><a href="MedicationRequest-simvastatin-01-a.html">simvastatin-01-a</a></td>
@@ -168,7 +168,7 @@ Conventions used in testing:
     <td><a href="MedicationRequest-paracetamol-codeine-03-a.html">paracetamol-codeine-03-a</a></td>
   </tr>
   <tr>
-    <td rowspan="9"><a href="StructureDefinition-au-ps-medicationrequest-b.html">EXPERIMENTAL AU PS MedicationRequest Approach B</a></td>
+    <td rowspan="9"><a href="StructureDefinition-au-exp-ps-medicationrequest-b.html">EXPERIMENTAL AU PS MedicationRequest Approach B</a></td>
     <td rowspan="9">Approach B: <ul><li>Derive from AU Core</li><li>Reapply AU Core constraints (so they appear in the diff similar to US Core approach)</li><li>Apply IPS constraints</li><li>State compliesWith IPS</li></ul> In this case the references to profiles are pointed to AU PS profiles where they exist.</td>
     <td rowspan="3">Validate examples compliant with IPS and AU Core</td>
     <td><a href="MedicationRequest-simvastatin-01-b.html">simvastatin-01-b</a></td>
@@ -200,7 +200,7 @@ Conventions used in testing:
     <td><a href="MedicationRequest-paracetamol-codeine-03-b.html">paracetamol-codeine-03-b</a></td>
   </tr>
   <tr>
-    <td rowspan="9"><a href="StructureDefinition-au-ps-medicationrequest-c.html">EXPERIMENTAL AU PS MedicationRequest Approach C</a></td>
+    <td rowspan="9"><a href="StructureDefinition-au-exp-ps-medicationrequest-c.html">EXPERIMENTAL AU PS MedicationRequest Approach C</a></td>
     <td rowspan="9">Approach C: <ul><li>Derive from AU Core</li><li>Apply IPS constraints</li><li>State compliesWith IPS</li></ul></td>
     <td rowspan="3">Validate examples compliant with IPS and AU Core</td>
     <td><a href="MedicationRequest-simvastatin-01-c.html">simvastatin-01-c</a></td>
@@ -232,7 +232,7 @@ Conventions used in testing:
     <td><a href="MedicationRequest-paracetamol-codeine-03-c.html">paracetamol-codeine-03-c</a></td>
   </tr>
   <tr>
-    <td rowspan="9"><a href="StructureDefinition-au-ps-medicationrequest-d.html">EXPERIMENTAL AU PS MedicationRequest Approach D</a></td>
+    <td rowspan="9"><a href="StructureDefinition-au-exp-ps-medicationrequest-d.html">EXPERIMENTAL AU PS MedicationRequest Approach D</a></td>
     <td rowspan="9">Approach D: <ul><li>Derive from FHIR</li><li>Apply AU Base constraints (terminologies and identifiers)</li><li>Apply AU Core constraints</li><li>Apply IPS constraints</li><li>State compliesWith AU Core and IPS</li></ul></td>
     <td rowspan="3">Validate examples compliant with IPS and AU Core</td>
     <td><a href="MedicationRequest-simvastatin-01-d.html">simvastatin-01-d</a></td>
@@ -264,7 +264,7 @@ Conventions used in testing:
     <td><a href="MedicationRequest-paracetamol-codeine-03-d.html">paracetamol-codeine-03-d</a></td>
   </tr>
   <tr>
-    <td rowspan="9"><a href="StructureDefinition-au-ps-medicationrequest-e.html">EXPERIMENTAL AU PS MedicationRequest Approach E</a></td>
+    <td rowspan="9"><a href="StructureDefinition-au-exp-ps-medicationrequest-e.html">EXPERIMENTAL AU PS MedicationRequest Approach E</a></td>
     <td rowspan="9">Approach E: <ul><li>Derived from IPS</li><li>Apply AU Core constraints where possible</li></ul> This is not complete yet as we would want to modify the references to IPS profiles to be AU PS profiles but IG Publisher builds fail if this is done.</td>
     <td rowspan="3">Validate examples compliant with IPS and AU Core</td>
     <td><a href="MedicationRequest-simvastatin-01-e.html">simvastatin-01-e</a></td>
@@ -296,7 +296,7 @@ Conventions used in testing:
     <td><a href="MedicationRequest-paracetamol-codeine-03-e.html">paracetamol-codeine-03-e</a></td>
   </tr>
   <tr>
-    <td rowspan="9"><a href="StructureDefinition-au-ps-medicationrequest-f.html">EXPERIMENTAL AU PS MedicationRequest Approach F</a></td>
+    <td rowspan="9"><a href="StructureDefinition-au-exp-ps-medicationrequest-f.html">EXPERIMENTAL AU PS MedicationRequest Approach F</a></td>
     <td rowspan="9">Approach F: <ul><li>Derive from AU Core</li><li>use imposeProfile to enforce IPS constraints</li></ul></td>
     <td rowspan="3">Validate examples compliant with IPS and AU Core</td>
     <td><a href="MedicationRequest-simvastatin-01-f.html">simvastatin-01-f</a></td>
@@ -328,7 +328,7 @@ Conventions used in testing:
     <td><a href="MedicationRequest-paracetamol-codeine-03-f.html">paracetamol-codeine-03-f</a></td>
   </tr>
   <tr>
-    <td rowspan="9"><a href="StructureDefinition-au-ps-medicationrequest-g.html">EXPERIMENTAL AU PS MedicationRequest Approach G</a> </td>
+    <td rowspan="9"><a href="StructureDefinition-au-exp-ps-medicationrequest-g.html">EXPERIMENTAL AU PS MedicationRequest Approach G</a> </td>
     <td rowspan="9">Approach G: <ul><li>Derive from IPS</li><li>use imposeProfile to enforce AU Core constraints</li></ul></td>
     <td rowspan="3">Validate examples compliant with IPS and AU Core</td>
     <td><a href="MedicationRequest-simvastatin-01-g.html">simvastatin-01-g</a></td>
@@ -360,7 +360,7 @@ Conventions used in testing:
     <td><a href="MedicationRequest-paracetamol-codeine-03-g.html">paracetamol-codeine-03-g</a></td>
   </tr>
   <tr>
-    <td rowspan="9"><a href="StructureDefinition-au-ps-medicationrequest-h.html">EXPERIMENTAL AU PS MedicationRequest Approach H</a></td>
+    <td rowspan="9"><a href="StructureDefinition-au-exp-ps-medicationrequest-h.html">EXPERIMENTAL AU PS MedicationRequest Approach H</a></td>
     <td rowspan="9">Approach H: <ul><li>Derive from AU Base</li><li>use imposeProfile to enforce both AU Core and IPS constraints</li></ul></td>
     <td rowspan="3">Validate examples compliant with IPS and AU Core</td>
     <td><a href="MedicationRequest-simvastatin-01-h.html">simvastatin-01-h</a></td>
@@ -392,7 +392,7 @@ Conventions used in testing:
     <td><a href="MedicationRequest-paracetamol-codeine-03-h.html">paracetamol-codeine-03-h</a></td>
   </tr>
   <tr>
-    <td rowspan="9"><a href="StructureDefinition-au-ps-medicationrequest-i.html">EXPERIMENTAL AU PS MedicationRequest Approach I</a></td>
+    <td rowspan="9"><a href="StructureDefinition-au-exp-ps-medicationrequest-i.html">EXPERIMENTAL AU PS MedicationRequest Approach I</a></td>
     <td rowspan="9">Approach I: <ul><li>Derive from the FHIR resource</li><li>State complies with AU Core and IPS</li></ul> Note this is a negative case. The profile does not include, directly or by reference, any rules to make the claims of assertion true. This profile demonstrates behaviour when a 'false' compliesWith is stated.</td>
     <td rowspan="3">Validate examples compliant with IPS and AU Core</td>
     <td><a href="MedicationRequest-simvastatin-01-i.html">simvastatin-01-i</a></td>
