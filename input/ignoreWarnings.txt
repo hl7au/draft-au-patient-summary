@@ -1,4 +1,26 @@
 == Suppressed Messages ==
 
-# No examples in this IG
-The Implementation Guide contains no examples for this profile
+# =========================================================================================
+# === Warnings ====
+# =========================================================================================
+
+# === WARNING: These are warnings for publication artefacts not used in HL7 AU specifications at this time and are accepted by the AU FHIR WG. ===  
+The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+
+# === WARNING: Artefacts inherit multiple profiles for certain data types (e.g., Address, Identifier) from AU Base. The IG Publisher cannot match example instances to a single profile and generates these warnings. This behaviour is expected and consistent with the design of AU Core and AU Base. ===
+Found multiple matching profiles among 2 choices: http://hl7.org.au/fhir/StructureDefinition/au-address, http://hl7.org/fhir/StructureDefinition/Address
+Found multiple matching profiles among 2 choices: http://hl7.org.au/fhir/StructureDefinition/au-australianbusinessnumber, http://hl7.org/fhir/StructureDefinition/Identifier
+Found multiple matching profiles among 2 choices: http://hl7.org.au/fhir/StructureDefinition/au-hpio, http://hl7.org/fhir/StructureDefinition/Identifier
+Found multiple matching profiles among 2 choices: http://hl7.org.au/fhir/StructureDefinition/au-ihi, http://hl7.org/fhir/StructureDefinition/Identifier
+Found multiple matching profiles among 2 choices: http://hl7.org.au/fhir/StructureDefinition/au-medicalrecordnumber, http://hl7.org/fhir/StructureDefinition/Identifier
+Found multiple matching profiles among 2 choices: http://hl7.org.au/fhir/StructureDefinition/au-dvanumber, http://hl7.org/fhir/StructureDefinition/Identifier
+Found multiple matching profiles among 2 choices: http://hl7.org.au/fhir/StructureDefinition/au-hpii, http://hl7.org/fhir/StructureDefinition/Identifier
+Found multiple matching profiles among 2 choices: http://hl7.org.au/fhir/StructureDefinition/au-employeenumber, http://hl7.org/fhir/StructureDefinition/Identifier
+Found multiple matching profiles among 2 choices: http://hl7.org.au/fhir/StructureDefinition/au-medicareprovidernumber, http://hl7.org/fhir/StructureDefinition/Identifier
+Found multiple matching profiles among 2 choices: http://hl7.org.au/fhir/StructureDefinition/au-pbsprescribernumber, http://hl7.org/fhir/StructureDefinition/Identifier
+Found multiple matching profiles among 2 choices: http://hl7.org.au/fhir/StructureDefinition/au-medicarecardnumber, http://hl7.org/fhir/StructureDefinition/Identifier
+
+# === INFORMATION: Addressing this behaviour is not in scope of this EXPERIMENTAL FHIR IG. ===
+The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
