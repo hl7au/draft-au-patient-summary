@@ -5,7 +5,6 @@
         <valueInteger value="0"/>
     </extension>
     <url value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-medicationrequest-e"/>
-    <version value="0.1.0"/>
     <name value="EXPERIMENTALAUPSMedicationRequestApproachE"/>
     <title value="EXPERIMENTAL AU PS MedicationRequest Approach E"/>
     <status value="draft"/>

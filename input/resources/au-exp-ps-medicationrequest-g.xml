@@ -8,7 +8,6 @@
     <valueCanonical value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-medicationrequest"/>
   </extension>
   <url value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-medicationrequest-g"/>
-  <version value="0.1.0"/>
   <name value="EXPERIMENTALAUPSMedicationRequestApproachG"/>
   <title value="EXPERIMENTAL AU PS MedicationRequest Approach G"/>
   <status value="draft"/>

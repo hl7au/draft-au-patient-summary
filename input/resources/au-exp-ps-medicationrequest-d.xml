@@ -11,12 +11,11 @@
         <valueCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationRequest-uv-ips"/>
     </extension>
     <url value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-medicationrequest-d"/>
-    <version value="0.1.0"/>
     <name value="EXPERIMENTALAUPSMedicationRequestApproachD"/>
     <title value="EXPERIMENTAL AU PS MedicationRequest Approach D"/>
     <status value="draft"/>
     <experimental value="true"/>
-    <description value="This profile is based on the AU Core profile, with IPS rules added as well (by reference to the IPS profile)."/>
+    <description value="This profile is demonstrates approach A: Derive from the FHIR resource, manually apply AU Base constraints, manually apply additional AU Core constraints, manually apply additional IPS constraints (additional to AU Core), target references for elements flagged with Must Support changed to EXPERIMENTAL AU PS profiles, state compliesWith AU Core and IPS."/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="MedicationRequest"/>
@@ -169,9 +168,9 @@
             <path value="MedicationRequest.authoredOn"/>
             <short value="Created date"/>
             <min value="1"/>
-            <condition value="au-core-medreq-01-d"/>
+            <condition value="au-core-medreq-01"/>
             <constraint>
-                <key value="au-core-medreq-01-d"/>
+                <key value="au-core-medreq-01"/>
                 <severity value="error"/>
                 <human value="Date shall be precise to the day or, if not available, the Data Absent Reason extension shall be present"/>
                 <expression value="$this.hasValue() implies (extension('http://hl7.org/fhir/StructureDefinition/data-absent-reason').value.exists().not() and $this.toString().length() >= 10)"/>
