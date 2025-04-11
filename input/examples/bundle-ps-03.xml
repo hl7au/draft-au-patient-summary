@@ -3,7 +3,7 @@
     <id value="ps-03"/>
     <meta>
         <lastUpdated value="2019-09-17T09:01:00+10:00"/>
-        <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-composition"/>
+        <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-composition"/>
     </meta>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
@@ -18,7 +18,7 @@
             <Composition xmlns="http://hl7.org/fhir">
                 <id value="472d2cd8-cb3f-4450-854a-fae62130324c"/>
                 <meta>
-                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-composition"/>
+                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-composition"/>
                 </meta>
                 <language value="en-AU"/>
                 <!-- Multiple information-recipients of different resource type -->
@@ -211,7 +211,7 @@
             <Patient xmlns="http://hl7.org/fhir">
                 <id value="36298f0d-9a50-48f5-a739-851d8bc8f018"/>
                 <meta>
-                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-patient"/>
+                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-patient"/>
                 </meta>
                 <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
                     <valueAddress>
@@ -358,7 +358,7 @@
             <PractitionerRole xmlns="http://hl7.org/fhir">
                 <id value="c2f13b02-23fa-4a14-a95e-8ecc811454f6"/>
                 <meta>
-                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-practitionerrole"/>
+                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-practitionerrole"/>
                 </meta>
                 <identifier>
                     <type>
@@ -422,7 +422,7 @@
             <Practitioner xmlns="http://hl7.org/fhir">
                 <id value="64af843a-685d-4383-b013-cfaf4eb4f627"/>
                 <meta>
-                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-practitioner"/>
+                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-practitioner"/>
                 </meta>
                 <identifier>
                     <type>
@@ -500,7 +500,7 @@
             <Organization xmlns="http://hl7.org/fhir">
                 <id value="113f3887-9b92-4b4e-be67-73f11bb9fed9"/>
                 <meta>
-                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-organization"/>
+                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-organization"/>
                 </meta>
                 <identifier>
                     <type>
@@ -662,7 +662,7 @@
             <Condition xmlns="http://hl7.org/fhir">
                 <id value="13556c94-ee02-4232-b19f-d0b60a61f7cd"/>
                 <meta>
-                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-condition"/>
+                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-condition"/>
                 </meta>
                 <clinicalStatus>
                     <coding>
@@ -714,7 +714,7 @@
             <Condition xmlns="http://hl7.org/fhir">
                 <id value="23ff740b-51d2-44c3-ae5a-af69dfbcd11f"/>
                 <meta>
-                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-condition"/>
+                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-condition"/>
                 </meta>
                 <clinicalStatus>
                     <coding>
@@ -766,7 +766,7 @@
             <Immunization xmlns="http://hl7.org/fhir">
                 <id value="92a2bebf-ada8-445b-b87b-f1c3022604a5"/>
                 <meta>
-                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-immunization"/>
+                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-immunization"/>
                 </meta>
                 <status value="completed"/>
                 <vaccineCode>

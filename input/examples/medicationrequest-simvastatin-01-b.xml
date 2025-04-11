@@ -2,7 +2,7 @@
 <MedicationRequest xmlns="http://hl7.org/fhir">
     <id value="simvastatin-01-b"/>
         <meta>
-        <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-b"/>
+        <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-medicationrequest-b"/>
      </meta>
     <status value="active"/>
     <intent value="order"/>

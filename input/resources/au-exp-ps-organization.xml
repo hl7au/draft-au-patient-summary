@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-exp-ps-organization"/>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="0"/>
-  </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile">
     <valueCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips"/>
   </extension>

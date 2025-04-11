@@ -2,7 +2,7 @@
     <id value="ps-02"/>
     <meta>
         <lastUpdated value="2019-09-17T09:01:00+10:00"/>
-       <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-composition"/>
+       <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-composition"/>
     </meta>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
@@ -17,7 +17,7 @@
             <Composition>
                 <id value="3f883564-c6af-4ca3-83c7-f7c7b5239026"/>
                 <meta>
-                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-composition"/>
+                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-composition"/>
                 </meta>
                 <language value="en-AU"/>
                 <!--  Multiple information-recipients of different resource type  -->
@@ -209,7 +209,7 @@
             <Patient>
                 <id value="aa0dbd5f-4c3a-4623-a94c-4a7735b79851"/>
                 <meta>
-                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-patient"/>
+                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-patient"/>
                 </meta>
                 <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
                     <valueAddress>
@@ -356,7 +356,7 @@
             <PractitionerRole>
                 <id value="7adbe61a-fe69-4dc8-b2f6-a9e55a8b2127"/>
                 <meta>
-                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-practitionerrole"/>
+                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-practitionerrole"/>
                 </meta>
                 <identifier>
                     <type>
@@ -504,7 +504,7 @@
             <Organization>
                 <id value="4a78dc16-a7d0-4fc4-a505-3efd53012ac6"/>
                 <meta>
-                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-organization"/>
+                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-organization"/>
                 </meta>
                 <type>
                     <coding>
@@ -542,7 +542,7 @@
             <MedicationRequest xmlns="http://hl7.org/fhir">
                 <id value="906f441e-de7f-4154-8487-8f3dac849c28"/>
                 <meta>
-                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest"/>
+                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-medicationrequest"/>
                 </meta>
                 <contained>
                     <Medication>
@@ -574,7 +574,7 @@
             <Condition xmlns="http://hl7.org/fhir">
                 <id value="441d4811-87bd-4979-a6bf-e097664b903f"/>
                 <meta>
-                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-condition"/>
+                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-condition"/>
                 </meta>
                 <clinicalStatus>
                     <coding>
@@ -617,7 +617,7 @@
             <Immunization xmlns="http://hl7.org/fhir">
                 <id value="e704739d-4139-403c-8ce1-776cb1f25210"/>
                 <meta>
-                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-immunization"/>
+                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-immunization"/>
                 </meta>
                 <status value="completed"/>
                 <vaccineCode>
@@ -651,7 +651,7 @@
             <AllergyIntolerance xmlns="http://hl7.org/fhir">
                 <id value="3d6d0334-b72b-49f3-9932-bc7befa84977"/>
                 <meta>
-                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-allergyintolerance"/>
+                    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-allergyintolerance"/>
                 </meta>
                 <clinicalStatus>
                     <coding>

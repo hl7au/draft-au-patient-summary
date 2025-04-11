@@ -2,7 +2,7 @@
 <MedicationRequest xmlns="http://hl7.org/fhir">
     <id value="paracetamol-codeine-02-i"/>
     <meta>
-        <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-medicationrequest-i"/>
+        <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-medicationrequest-i"/>
     </meta>
     <status value="unknown"/>
     <intent value="order"/>

@@ -3,7 +3,7 @@
   <!--  Example adapted from International Patient Summary Implementation Guide composition-minimal  -->
   <id value="ps-minimal"/>
   <meta>
-    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-ps-composition"/>
+    <profile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-composition"/>
   </meta>
    <identifier>
         <system value="urn:ietf:rfc:3986"/>
