@@ -34,6 +34,7 @@
       <short value="Entry resource in the patient summary bundle"/>
       <definition value="An entry resource included in the patient summary document bundle resource."/>
       <comment value="The Composition is the first entry (only a single Composition resource instance can be included) and a Patient resource. Additional constraints are specified in the AU PS Composition profile."/>
+      <min value="2"/>
       <mustSupport value="true"/>
     </element>
     <element id="Bundle.entry.fullUrl">
