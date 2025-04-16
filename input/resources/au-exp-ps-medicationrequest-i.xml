@@ -15,7 +15,7 @@
   <title value="EXPERIMENTAL AU PS MedicationRequest Approach I"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <description value="This profile is based on the FHIR resource, and states complies with AU Core and IPS but does not include directly in the profile any rules to make this true - this is a negative case, that shows behaviour when a 'false' complies with is stated."/>
+  <description value="This profile is demonstrates approach I: Derive from the FHIR resource, and state complies with AU Core and IPS but does not include directly in the profile any rules to make this true - this is a negative case, that shows behaviour when a 'false' complies with is stated."/>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="MedicationRequest"/>

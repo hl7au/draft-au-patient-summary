@@ -15,7 +15,7 @@
   <title value="EXPERIMENTAL AU PS MedicationRequest Approach A"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <description value="This profile is demonstrates approach A: Derive from AU Base, manually apply AU Core constraints, manually apply additional IPS constraints additional to AU Core, target references for elements flagged with Must Support changed to EXPERIMENTAL AU PS profiles, state compliesWith AU Core and IPS."/>
+  <description value="This profile demonstrates approach A: Derive from AU Base, manually apply AU Core constraints, manually apply additional IPS constraints additional to AU Core, target references for elements flagged with Must Support changed to EXPERIMENTAL AU PS profiles, state compliesWith AU Core and IPS."/>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="MedicationRequest"/>
