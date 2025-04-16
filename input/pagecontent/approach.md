@@ -61,9 +61,9 @@ In [qa.html](qa.html), if an instance passes, it does so whether `meta.profile` 
 <tbody>
   <tr>
     <td rowspan="3">01 Example compliant to AU Core and IPS</td>
-    <td>simvastin-01-aucoreips</td>
-    <td>simvastin-01-aucore</td>
-    <td>simvastin-01-ips</td>
+    <td>simvastatin-01-aucoreips</td>
+    <td>simvastatin-01-aucore</td>
+    <td>simvastatin-01-ips</td>
   </tr>
   <tr>
     <td>reaptan-01-aucoreips</td>
@@ -77,9 +77,9 @@ In [qa.html](qa.html), if an instance passes, it does so whether `meta.profile` 
   </tr>
   <tr>
     <td rowspan="3">02 Example compliant to AU Core but not IPS</td>
-    <td>simvastin-02-aucoreips</td>
-    <td>simvastin-02-aucore</td>
-    <td>simvastin-02-ips</td>
+    <td>simvastatin-02-aucoreips</td>
+    <td>simvastatin-02-aucore</td>
+    <td>simvastatin-02-ips</td>
   </tr>
   <tr>
     <td>reaptan-02-aucoreips</td>
@@ -93,9 +93,9 @@ In [qa.html](qa.html), if an instance passes, it does so whether `meta.profile` 
   </tr>
   <tr>
     <td rowspan="3">03 Example compliant to IPS but not AU Core</td>
-    <td>simvastin-03-aucoreips</td>
-    <td>simvastin-03-aucore</td>
-    <td>simvastin-03-ips</td>
+    <td>simvastatin-03-aucoreips</td>
+    <td>simvastatin-03-aucore</td>
+    <td>simvastatin-03-ips</td>
   </tr>
   <tr>
     <td>reaptan-03-aucoreips</td>
