@@ -129,12 +129,6 @@
 		</element>
 		<element id="Composition.event:careProvisioningEvent.code">
 			<path value="Composition.event.code"/>
-			<patternCodeableConcept>
-				<coding>
-				<system value="http://terminology.hl7.org/CodeSystem/v3-ActClass"/>
-				<code value="PCPR"/>
-				</coding>
-			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.event:careProvisioningEvent.period">
@@ -189,12 +183,6 @@
 		</element>
 		<element id="Composition.section:sectionProblems.code">
 			<path value="Composition.section.code"/>
-			<patternCodeableConcept>
-				<coding>
-				<system value="http://loinc.org"/>
-				<code value="11450-4"/>
-				</coding>
-			</patternCodeableConcept>
 		</element>
 		<element id="Composition.section:sectionProblems.entry">
 			<path value="Composition.section.entry"/>
@@ -228,12 +216,6 @@
 		</element>
 		<element id="Composition.section:sectionAllergies.code">
 			<path value="Composition.section.code"/>
-			<patternCodeableConcept>
-				<coding>
-				<system value="http://loinc.org"/>
-				<code value="48765-2"/>
-				</coding>
-			</patternCodeableConcept>
 		</element>
 		<element id="Composition.section:sectionAllergies.entry">
 			<path value="Composition.section.entry"/>
@@ -268,12 +250,6 @@
 		</element>
 		<element id="Composition.section:sectionMedications.code">
 			<path value="Composition.section.code"/>
-			<patternCodeableConcept>
-				<coding>
-				<system value="http://loinc.org"/>
-				<code value="10160-0"/>
-				</coding>
-			</patternCodeableConcept>
 		</element>
 		<element id="Composition.section:sectionMedications.entry">
 			<path value="Composition.section.entry"/>
@@ -317,12 +293,6 @@
 		</element>
 		<element id="Composition.section:sectionImmunizations.code">
 			<path value="Composition.section.code"/>
-			<patternCodeableConcept>
-				<coding>
-				<system value="http://loinc.org"/>
-				<code value="11369-6"/>
-				</coding>
-			</patternCodeableConcept>
 		</element>
 		<element id="Composition.section:sectionImmunizations.entry">
 			<path value="Composition.section.entry"/>
