@@ -16,4 +16,9 @@
 	<type value="Medication"/>
 	<baseDefinition value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-medication"/>
 	<derivation value="constraint"/>
+	 <differential>
+		<element id="Medication">
+			<path value="Medication"/>
+		</element>
+  </differential>
 </StructureDefinition>

@@ -17,4 +17,9 @@
   <type value="Organization"/>
   <baseDefinition value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-organization"/>
   <derivation value="constraint"/>
+  <differential>
+    <element id="Organization">
+      <path value="Organization"/>
+    </element>
+  </differential>
 </StructureDefinition>
