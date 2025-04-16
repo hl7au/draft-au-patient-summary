@@ -66,7 +66,6 @@
 		<element id="Composition.title">
 			<path value="Composition.title"/>
 			<short value="Patient Summary"/>
-			<definition value="Official human-readable label for the composition.&#xD;&#xA;&#xD;&#xA;For this document should be &quot;International Patient Summary&quot; or any equivalent translation"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.attester">
@@ -169,7 +168,6 @@
 		<element id="Composition.section.extension:section-note">
 			<path value="Composition.section.extension"/>
 			<sliceName value="section-note"/>
-			<short value="Additional notes that apply to the section (but not to specific resource)."/>
 			<type>
 				<code value="Extension"/>
 				<profile value="http://hl7.org/fhir/StructureDefinition/note"/>
@@ -182,6 +180,7 @@
 		<element id="Composition.section:sectionProblems">
 			<path value="Composition.section"/>
 			<sliceName value="sectionProblems"/>
+			<short value="Patient Summary Problems Section"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionProblems.title">
@@ -206,8 +205,6 @@
 				</discriminator>
 				<rules value="open"/>
 			</slicing>
-			<short value="Clinical problems or conditions currently being monitored for the patient."/>
-			<definition value="It lists and describes clinical problems or conditions currently being monitored for the patient.  This entry shall be used to document that no information about problems is available, or that no relevant problems are known."/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionProblems.entry:problem">
@@ -222,6 +219,7 @@
 		<element id="Composition.section:sectionAllergies">
 			<path value="Composition.section"/>
 			<sliceName value="sectionAllergies"/>
+			<short value="Patient Summary Allergies and Intolerances Section"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionAllergies.title">
@@ -246,8 +244,6 @@
 				</discriminator>
 				<rules value="open"/>
 			</slicing>
-			<short value="Relevant allergies or intolerances (conditions) for that patient."/>
-			<definition value="It lists the relevant allergies or intolerances (conditions) for that patient, describing the kind of reaction (e.g. rash, anaphylaxis,..); preferably the agents that cause it; and optionally the criticality and the certainty of the allergy.&#xD;&#xA;At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.&#xD;&#xA; This entry shall be used to document that no information about allergies is available, or that no allergies are known ."/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionAllergies.entry:allergyOrIntolerance">
@@ -262,7 +258,7 @@
 		<element id="Composition.section:sectionMedications">
 			<path value="Composition.section"/>
 			<sliceName value="sectionMedications"/>
-			<short value="Medication Summary Section"/>
+			<short value="Patient Summary Medication Summary Section"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionMedications.title">
@@ -288,8 +284,6 @@
 				</discriminator>
 				<rules value="open"/>
 			</slicing>
-			<short value="Medications relevant for the scope of the patient summary"/>
-			<definition value="This list the medications relevant for the scope of the patient summary or it is used to indicate that the subject is known not to be on any relevant medication; either that no information is available about medications."/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionMedications.entry:medicationStatement">
@@ -339,8 +333,6 @@
 				</discriminator>
 				<rules value="open"/>
 			</slicing>
-			<short value="Patient's immunization status and pertinent history."/>
-			<definition value="It defines the patient's current immunization status and pertinent immunization history.&#xD;&#xA;The primary use case for the Immunization Section is to enable communication of a patient's immunization status.&#xD;&#xA;It may contain the entire immunization history that is relevant to the period of time being summarized. This entry shall be used to document that no information about immunizations is available, or that no immunizations are known."/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionImmunizations.entry:immunization">
