@@ -10,7 +10,7 @@
   <title value="EXPERIMENTAL AU PS Organization"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <description value="This profile is based on the AU Core profile, with IPS rules imposed, and target references for elements flagged with Must Support changed to EXPERIMENTAL AU PS profiles. This is the expected approach for the HL7 AU Patient Summary FHIR IG."/>
+  <description value="This profile is based on the AU Core profile. This profile is compliant to IPS Organization profile. However, some formal declaration is required to be provided for IG Publisher otherwise the preferred approach of deriving from IPS Bundle and IPS Composition cannot be used - a build error is triggered - at this time imposeProfile is used."/>
   <fhirVersion value="4.0.1"/>
   <kind value="resource"/>
   <abstract value="false"/>
