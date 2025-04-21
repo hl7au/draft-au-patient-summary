@@ -17,6 +17,14 @@
     <baseDefinition value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-medicationstatement"/>
     <derivation value="constraint"/>
     <differential>
+        <element id="MedicationStatement.medication[x]:medicationCodeableConcept">
+            <path value="MedicationStatement.medication[x]"/>
+            <sliceName value="medicationCodeableConcept"/>
+            <type>
+                <code value="CodeableConcept"/>
+                <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+            </type>
+        </element>
         <element id="MedicationStatement.medication[x]:medicationReference">
             <path value="MedicationStatement.medication[x]"/>
             <sliceName value="medicationReference"/>
@@ -32,6 +40,11 @@
                 <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-patient"/>
             </type>
         </element>
+        <element id="MedicationStatement.subject.reference">
+			<path value="MedicationStatement.subject.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
         <element id="MedicationStatement.reasonReference">
             <path value="MedicationStatement.reasonReference"/>
             <type>
@@ -41,5 +54,9 @@
                 <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips"/>
             </type>
         </element>
+        <element id="MedicationStatement.dosage.timing">
+			<path value="MedicationStatement.dosage.timing"/>
+			<mustSupport value="true"/>
+		</element>
     </differential>
 </StructureDefinition>

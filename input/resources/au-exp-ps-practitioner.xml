@@ -10,7 +10,7 @@
   <title value="EXPERIMENTAL AU PS Practitioner"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <description value="This profile is based on the AU Core profile, with IPS rules imposed, and target references for elements flagged with Must Support changed to EXPERIMENTAL AU PS profiles. This is the expected approach for the HL7 AU Patient Summary FHIR IG."/>
+  <description value="This profile is based on the AU Core profile, the additional IPS rules are manually applied, and the target references for elements flagged with Must Support changed to EXPERIMENTAL AU PS profiles. This profile is compliant to IPS Patient profile. For IG Publisher to allow for this profile to be referenced by a Composition profile or Bundle profile that is derived from IPS, some formal declaration is required to be provided otherwise a build error is triggered. At this time imposeProfile is used, in future compliesWith may be used. This is the expected approach for the HL7 AU Patient Summary FHIR IG."/>
   <fhirVersion value="4.0.1"/>
   <kind value="resource"/>
   <abstract value="false"/>
@@ -20,6 +20,14 @@
    <differential>
     <element id="Practitioner">
       <path value="Practitioner"/>
+    </element>
+    <element id="Practitioner.telecom">
+      <path value="Practitioner.telecom"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Practitioner.address">
+      <path value="Practitioner.address"/>
+      <mustSupport value="true"/>
     </element>
   </differential>
 </StructureDefinition>

@@ -10,15 +10,51 @@
 	<title value="EXPERIMENTAL AU PS Medication"/>
 	<status value="draft"/>
 	<experimental value="true"/>
-	<description value="This profile is based on the AU Core profile, with IPS rules imposed. This is the expected approach for the HL7 AU Patient Summary FHIR IG."/>
+	<description value="This profile is based on the AU Core profile, the additional IPS rules are manually applied, and the target references for elements flagged with Must Support changed to EXPERIMENTAL AU PS profiles. This profile is compliant to IPS Patient profile. For IG Publisher to allow for this profile to be referenced by a Composition profile or Bundle profile that is derived from IPS, some formal declaration is required to be provided otherwise a build error is triggered. At this time imposeProfile is used, in future compliesWith may be used. This is the expected approach for the HL7 AU Patient Summary FHIR IG."/>
 	<kind value="resource"/>
 	<abstract value="false"/>
 	<type value="Medication"/>
 	<baseDefinition value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-medication"/>
 	<derivation value="constraint"/>
-	 <differential>
+	<differential>
 		<element id="Medication">
 			<path value="Medication"/>
 		</element>
-  </differential>
+		<element id="Medication.code">
+			<path value="Medication.code"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+    	</element>
+		<element id="Medication.form">
+			<path value="Medication.form"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Medication.ingredient">
+			<path value="Medication.ingredient"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Medication.ingredient.item[x]">
+			<path value="Medication.ingredient.item[x]"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Substance"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Medication.ingredient.strength">
+			<path value="Medication.ingredient.strength"/>
+			<mustSupport value="true"/>
+		</element>
+  	</differential>
 </StructureDefinition>
