@@ -10,19 +10,45 @@
   <title value="EXPERIMENTAL AU PS Immunization"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <description value="This profile is based on the AU Core profile, with IPS rules imposed, and target references for elements flagged with Must Support changed to EXPERIMENTAL AU PS profiles. This is the expected approach for the HL7 AU Patient Summary FHIR IG."/>
+  <description value="This profile is based on the AU Core profile, the additional IPS rules are manually applied, and the target references for elements flagged with Must Support changed to EXPERIMENTAL AU PS profiles. This profile is compliant to IPS Immunization profile. For IG Publisher to allow for this profile to be referenced by a Composition profile or Bundle profile that is derived from IPS, some formal declaration is required to be provided otherwise a build error is triggered. At this time imposeProfile is used, in future compliesWith may be used. This is the expected approach for the HL7 AU Patient Summary FHIR IG."/>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Immunization"/>
   <baseDefinition value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-immunization"/>
   <derivation value="constraint"/>
   <differential>
+    <element id="Immunization.vaccineCode">
+      <path value="Immunization.vaccineCode"/>
+      <type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+    </element>
     <element id="Immunization.patient">
       <path value="Immunization.patient"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-patient"/>
       </type>
+    </element>
+    <element id="Immunization.patient.reference">
+      <path value="Immunization.patient.reference"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Immunization.site">
+      <path value="Immunization.site"/>
+      <type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+    </element>
+    <element id="Immunization.route">
+      <path value="Immunization.route"/>
+      <type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
     </element>
   </differential>
 </StructureDefinition>
