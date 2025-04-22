@@ -10,7 +10,7 @@
     <title value="EXPERIMENTAL AU PS Procedure"/>
     <status value="draft"/>
     <experimental value="true"/>
-    <description value="This profile is based on the AU Core profile, the additional IPS rules are manually applied, and the target references for elements flagged with Must Support changed to EXPERIMENTAL AU PS profiles. This profile is compliant to IPS Procedure profile. For IG Publisher to allow for this profile to be referenced by a Composition profile or Bundle profile that is derived from IPS, some formal declaration is required to be provided otherwise a build error is triggered. At this time imposeProfile is used, in future compliesWith may be used. This is the expected approach for the HL7 AU Patient Summary FHIR IG."/>
+    <description value="This profile is based on the AU Core profile, the additional IPS rules are manually applied, and the target references for elements flagged with Must Support changed to EXPERIMENTAL AU PS profiles. This profile is compliant to IPS Procedure profile. For IG Publisher to allow for this profile to be referenced by a Composition profile or Bundle profile that is derived from IPS, some formal declaration is required to be provided otherwise a build error is triggered. At this time compliesWithProfile is used in preference to imposeProfile. This is the expected approach for the HL7 AU Patient Summary FHIR IG."/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Procedure"/>
@@ -23,6 +23,10 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-patient"/>
             </type>
+        </element>
+        <element id="Procedure.performed[x]">
+            <path value="Procedure.performed[x]"/>
+            <min value="1"/>
         </element>
         <element id="Procedure.performer.actor">
             <path value="Procedure.performer.actor"/>

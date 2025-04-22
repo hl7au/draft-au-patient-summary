@@ -20,6 +20,23 @@
     <element id="Patient">
       <path value="Patient"/>
     </element>
+	<element id="Patient.name">
+      <path value="Patient.name"/>
+      <condition value="ips-pat-1"/>
+      <constraint>
+        <key value="ips-pat-1"/> 
+        <severity value="error"/>
+        <human value="Patient.name.given, Patient.name.family or Patient.name.text SHALL be present"/>
+        <expression value="family.exists() or given.exists() or text.exists()"/>
+      </constraint>
+    </element>
+	<element id="Patient.contact.relationship">
+      <path value="Patient.contact.relationship"/>
+      <type>
+		<code value="CodeableConcept"/>
+		<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+		</type>
+    </element>
     <element id="Patient.generalPractitioner">
       <path value="Patient.generalPractitioner"/>
       <type>
