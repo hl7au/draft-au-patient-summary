@@ -8,7 +8,7 @@
   <name value="EXPERIMENTALAUPSEncounter"/>
   <title value="EXPERIMENTAL AU PS Encounter"/>
   <status value="draft"/>
-  <description value="This profile is based on the AU Core profile with target references for elements flagged with Must Support changed to EXPERIMENTAL AU PS profiles. This is the expected approach for the HL7 AU Patient Summary FHIR IG." />
+  <description value="This profile is based on the AU Core profile with target references for elements flagged with Must Support changed to EXPERIMENTAL AU PS profiles. This profile is compliant to IPS with no further action as there is no IPS Encounter profile. This is the expected approach for the HL7 AU Patient Summary FHIR IG." />
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Encounter"/>
