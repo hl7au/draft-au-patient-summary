@@ -151,18 +151,23 @@
 				<profile value="http://hl7.org/fhir/StructureDefinition/note"/>
 			</type>
 		</element>
+		<element id="Composition.section.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
 		<element id="Composition.section.text">
 			<path value="Composition.section.text"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section.emptyReason">
+			<path value="Composition.section.emptyReason"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionProblems">
 			<path value="Composition.section"/>
 			<sliceName value="sectionProblems"/>
 			<short value="Patient Summary Problems Section"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Composition.section:sectionProblems.title">
-			<path value="Composition.section.title"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionProblems.code">
@@ -175,8 +180,6 @@
 		<element id="Composition.section:sectionProblems.entry:problem">
 			<path value="Composition.section.entry"/>
 			<sliceName value="problem"/>
-			<min value="0"/>
-      		<max value="*"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-condition"/>
@@ -187,10 +190,6 @@
 			<path value="Composition.section"/>
 			<sliceName value="sectionAllergies"/>
 			<short value="Patient Summary Allergies and Intolerances Section"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Composition.section:sectionAllergies.title">
-			<path value="Composition.section.title"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionAllergies.code">
@@ -215,11 +214,6 @@
 			<short value="Patient Summary Medication Summary Section"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionMedications.title">
-			<path value="Composition.section.title"/>
-			<short value="Medication Summary section"/>
-			<mustSupport value="true"/>
-		</element>
 		<element id="Composition.section:sectionMedications.code">
 			<path value="Composition.section.code"/>
 		</element>
@@ -227,20 +221,12 @@
 			<path value="Composition.section.entry"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionMedications.entry:medicationStatement">
+		<element id="Composition.section:sectionMedications.entry:medicationStatementOrRequest">
 			<path value="Composition.section.entry"/>
-			<sliceName value="medicationStatement"/>
+			<sliceName value="medicationStatementOrRequest"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-medicationstatement"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Composition.section:sectionMedications.entry:medicationRequest">
-			<path value="Composition.section.entry"/>
-			<sliceName value="medicationRequest"/>
-			<type>
-				<code value="Reference"/>
 				<targetProfile value="http://hl7.org.au.draft/fhir/aups/StructureDefinition/au-exp-ps-medicationrequest"/>
 			</type>
 			<mustSupport value="true"/>
@@ -249,11 +235,6 @@
 			<path value="Composition.section"/>
 			<sliceName value="sectionImmunizations"/>
 			<short value="Immunizations Section"/>
-			<definition value="The Immunizations Section defines a patient's current immunization status and pertinent immunization history.&#xD;&#xA;The primary use case for the Immunization Section is to enable communication of a patient's immunization status.&#xD;&#xA;The section includes the current immunization status, and may contain the entire immunization history that is relevant to the period of time being summarized."/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Composition.section:sectionImmunizations.title">
-			<path value="Composition.section.title"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionImmunizations.code">
@@ -272,5 +253,131 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<element id="Composition.section:sectionResults">
+      <path value="Composition.section"/>
+      <sliceName value="sectionResults"/>
+      <short value="Results Section"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Composition.section:sectionResults.code">
+      <path value="Composition.section.code"/>
+      <min value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+      </type>
+    </element>
+    <element id="Composition.section:sectionResults.entry">
+      <path value="Composition.section.entry"/>
+      <slicing>
+        <discriminator>
+          <type value="type"/>
+          <path value="resolve()"/>
+        </discriminator>
+        <discriminator>
+          <type value="profile"/>
+          <path value="resolve()"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
+      </type>
+    </element>
+    <element id="Composition.section:sectionResults.entry:results-observation-laboratory-pathology">
+      <path value="Composition.section.entry"/>
+      <sliceName value="results-observation-laboratory-pathology"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-pathology-uv-ips"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Composition.section:sectionResults.entry:results-observation-radiology">
+      <path value="Composition.section.entry"/>
+      <sliceName value="results-observation-radiology"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-radiology-uv-ips"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Composition.section:sectionProceduresHx">
+      <path value="Composition.section"/>
+      <sliceName value="sectionProceduresHx"/>
+      <short value="History of Procedures Section"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Composition.section:sectionProceduresHx.code">
+      <path value="Composition.section.code"/>
+      <type>
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+      </type>
+    </element>
+    <element id="Composition.section:sectionProceduresHx.entry">
+      <path value="Composition.section.entry"/>
+      <slicing>
+        <discriminator>
+          <type value="profile"/>
+          <path value="resolve()"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
+      </type>
+    </element>
+    <element id="Composition.section:sectionProceduresHx.entry:procedure">
+      <path value="Composition.section.entry"/>
+      <sliceName value="procedure"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Composition.section:sectionMedicalDevices">
+      <path value="Composition.section"/>
+      <sliceName value="sectionMedicalDevices"/>
+      <short value="Medical Devices Section"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Composition.section:sectionMedicalDevices.code">
+      <path value="Composition.section.code"/>
+      <type>
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+      </type>
+    </element>
+    <element id="Composition.section:sectionMedicalDevices.entry">
+      <path value="Composition.section.entry"/>
+      <slicing>
+        <discriminator>
+          <type value="profile"/>
+          <path value="resolve()"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DeviceUseStatement"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
+      </type>
+    </element>
+    <element id="Composition.section:sectionMedicalDevices.entry:deviceStatement">
+      <path value="Composition.section.entry"/>
+      <sliceName value="deviceStatement"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
 	</differential>
 </StructureDefinition>
