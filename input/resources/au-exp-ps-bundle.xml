@@ -42,7 +42,6 @@
       <path value="Bundle.type"/>
     </element>
     <element id="Bundle.timestamp">
-      <element id="Bundle.identifier">
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
         <extension url="code">
           <valueCode value="SHALL:able-to-populate"/>
@@ -63,7 +62,6 @@
       <mustSupport value="true"/>
     </element>
     <element id="Bundle.entry">
-      <element id="Bundle.identifier">
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
         <extension url="code">
           <valueCode value="SHALL:able-to-populate"/>
@@ -88,7 +86,6 @@
       <mustSupport value="true"/>
     </element>
     <element id="Bundle.entry.fullUrl">
-      <element id="Bundle.identifier">
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
         <extension url="code">
           <valueCode value="SHALL:able-to-populate"/>
