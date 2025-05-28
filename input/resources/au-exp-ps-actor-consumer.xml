@@ -12,8 +12,7 @@
   <type value="system"/> 
   <documentation value="An AU Patient Summary Consumer **SHALL** comply with the requirements of the [IPS Consumer](https://build.fhir.org/ig/HL7/fhir-ips/ActorDefinition-Consumer.html), and additionally:&#xa;&#xa;
 - **SHALL** implement the obligations defined for this actor on the element definition of AU PS profiles&#xa;&#xa;
-- **SHALL** accept resources containing *Must Support* elements with Missing Data or Suppressed Data without error&#xa;&#xa;
-How the system processes the resource depends on local requirements that could align with obligation terms such as [reject invalid](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-reject-invalid), [correctly handle](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-handle), [persist](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-persist), [display](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-display), or [ignore](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-ignore).&#xa;&#xa;
-When a *Must Support* element requires a more tightly stated obligation, this obligation is specified in the AU Core Requester [obligation extension](https://hl7.org/fhir/extensions/StructureDefinition-obligation.html) on the element definition."/>
+- **SHALL** consume resources containing *Must Support* elements with Missing Data or Suppressed Data without error&#xa;&#xa;
+How the system processes the resource depends on local requirements that could align with obligation terms such as [reject invalid](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-reject-invalid), [correctly handle](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-handle), [persist](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-persist), [display](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-display), or [ignore](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-ignore).&#xa;&#xa;."/>
   <derivedFrom value="http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"/>
 </ActorDefinition>

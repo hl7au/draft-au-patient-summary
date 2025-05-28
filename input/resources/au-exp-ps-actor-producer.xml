@@ -13,7 +13,6 @@
   <documentation value="An AU Patient Summary Consumer **SHALL** comply with the requirements of the [IPS Producer](https://build.fhir.org/ig/HL7/fhir-ips/ActorDefinition-Producer.html), and additionally:&#xa;&#xa;
 - **SHALL** implement the obligations defined for this actor on the element definition of AU PS profiles&#xa;&#xa;
 - **SHALL** implement the requirements on Suppressed Data when an element is NOT allowed to be shared&#xa;&#xa;
-- **SHALL** implement the requirements on Missing Data when an element value is NOT known&#xa;&#xa;
-When a *Must Support* element requires a more tightly stated obligation, this obligation is specified in the AU Core Responder [obligation extension](https://hl7.org/fhir/extensions/StructureDefinition-obligation.html) on the element definition."/>
+- **SHALL** implement the requirements on Missing Data when an element value is NOT known&#xa;&#xa;"/>
   <derivedFrom value="http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"/>
 </ActorDefinition>
