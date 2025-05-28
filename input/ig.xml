@@ -38,6 +38,18 @@
 	<definition>
 		<resource>
 			<reference>
+				<reference value="ActorDefinition/au-exp-ps-actor-consumer"/>
+			</reference>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ActorDefinition/au-exp-ps-actor-producer"/>
+			</reference>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/au-exp-ps-bundle"/>
 			</reference>
 			<exampleBoolean value="false"/>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActorDefinition xmlns="http://hl7.org/fhir">
+  <id value="au-exp-ps-actor-producer"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0"/> 
+  </extension>
+  <url value="http://hl7.org.au.draft/fhir/aups/ActorDefinition/au-exp-ps-actor-producer" />
+  <name value="EXPAUPSProducer"/> 
+  <title value="EXPERIMENTAL AU PS Producer"/> 
+  <status value="draft"/>
+  <description value="Experimental approach for an AU PS actor. This actor is based on the Producer (IPS) actor, and describes the additional requirements and documentation applied for the Australian context. This experimental actor will be used in place of IPS actor to define obligations within the Experimental AU PS profiles. This is the expected approach for the HL7 AU Patient Summary FHIR IG."/> 
+  <type value="system"/> 
+  <documentation value="An AU Patient Summary Consumer **SHALL** comply with the requirements of the [IPS Producer](https://build.fhir.org/ig/HL7/fhir-ips/ActorDefinition-Producer.html), and additionally:&#xa;&#xa;
+- **SHALL** implement the obligations defined for this actor on the element definition of AU PS profiles&#xa;&#xa;
+- **SHALL** implement the requirements on Suppressed Data when an element is NOT allowed to be shared&#xa;&#xa;
+- **SHALL** implement the requirements on Missing Data when an element value is NOT known&#xa;&#xa;
+When a *Must Support* element requires a more tightly stated obligation, this obligation is specified in the AU Core Responder [obligation extension](https://hl7.org/fhir/extensions/StructureDefinition-obligation.html) on the element definition."/>
+  <derivedFrom value="http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"/>
+</ActorDefinition>
