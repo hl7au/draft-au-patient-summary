@@ -30,6 +30,7 @@ This guide is divided into several pages which are listed at the top of each pag
   - [Artefacts Summary](artifacts.html): This page lists the FHIR artefacts defined in this guide.
   - [Profiles and Extensions](profiles-and-extensions.html): This page describes the profiles and extensions that are defined in this guide. This page also defines the approach to testing out profiling, and describes what each profile is testing.
   - [Terminology](terminology.html): This is a placeholder for when or if content becomes available.
+  - [Actor Definitions](artifacts.html#requirements-actor-definitions): The list of actor definitions defined in this guide to explore tooling and techniques for jurisdictional patient summary actors.
 - [Examples](examples.html): This page lists all the examples used in this guide.
 - [Support](downloads.html): These pages provide supporting material.
   - [Downloads](downloads.html): This page provides links to downloadable artefacts.
