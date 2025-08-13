@@ -12,7 +12,6 @@ We are testing different profiling strategies to assess the impact on:
 - whether FHIR tooling can process and enforce constraints
 - ease of use for implementers, including whether a single implementation guide can provide all constraints reducing the need to reference AU Base, AU Core, and IPS separately
 
-
 #### Relationship between HL7 AU and this implementation guide
 * This implementation guide is published as a proof of concept implementation guide known to HL7 Australia.
 * The content in this proof of concept guide may become an HL7 Australia specification.   
